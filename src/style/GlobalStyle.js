@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import Variables from "./Variables";
 
 const GlobalStyle = createGlobalStyle`
-    ${Variables}
+    ${Variables};
 
     *, *::before, *::after{
         margin: 0;

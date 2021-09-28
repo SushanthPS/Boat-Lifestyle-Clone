@@ -1,7 +1,7 @@
 import { css } from "styled-components";
 
 const Variables = css`
-    ::root {
+    :root {
         /* Primary Colors */
         --black: #000000;
         --red: #ff0000;
@@ -11,7 +11,7 @@ const Variables = css`
 
         --darkest-gray: #1c1c1c;
         --dark-gray: #2c2c2c;
-        --gray: #828282;
+        --gray: #e0e0e0 /*#828282*/;
         --light-gray: #f6f6f6;
 
         --white: #ffffff;
