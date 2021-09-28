@@ -12,7 +12,7 @@ const Variables = css`
         --darkest-gray: #1c1c1c;
         --dark-gray: #2c2c2c;
         --gray: #e0e0e0 /*#828282*/;
-        --light-gray: #f6f6f6;
+        --light-gray: #c4c4c4 /*#f6f6f6*/;
 
         --white: #ffffff;
 
