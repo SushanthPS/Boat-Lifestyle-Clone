@@ -111,10 +111,10 @@ const CardData = styled.div`
 
 const CardShopNowButton = styled.button`
     position: absolute;
+    right: 22px;
+    bottom: 32px;
     width: 109px;
     height: 28px;
-    right: 10px;
-    bottom: 10px;
     border: none;
     border-radius: 15px;
     display: flex;
