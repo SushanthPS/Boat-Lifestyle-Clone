@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
 
     body{
         font-family: 'Montserrat', sans-serif;
+        background: var(--black)
     }
 
     button{
