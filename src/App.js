@@ -3,7 +3,11 @@ import { Navbar } from "./components/navbar/Navbar";
 import { Footer } from "./components/Footer";
 import { ImageSlider } from "./components/ImageSlider";
 import { Login } from "./components/Login";
+
 import { Video } from "./components/Video";
+
+import { Register } from "./components/Register";
+
 
 function App() {
     return (
