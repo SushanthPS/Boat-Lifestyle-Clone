@@ -1,11 +1,16 @@
 import styled from "styled-components";
-import logo from "../assets/boat-logo.svg";
-import downArrowIcon from "../assets/down-arrow-icon.svg";
-import searchIcon from "../assets/search-icon.svg";
-import couponIcon from "../assets/coupon-icon.svg";
-import avatarIcon from "../assets/avatar-icon.svg";
-import cartIcon from "../assets/cart-icon.svg";
 import { Link } from "react-router-dom";
+
+// importing Custom sub-Components
+import { Collection } from "./NavHover";
+
+// importing assets
+import logo from "../../assets/boat-logo.svg";
+import downArrowIcon from "../../assets/down-arrow-icon.svg";
+import searchIcon from "../../assets/search-icon.svg";
+import couponIcon from "../../assets/coupon-icon.svg";
+import avatarIcon from "../../assets/avatar-icon.svg";
+import cartIcon from "../../assets/cart-icon.svg";
 
 const NavbarContainre = styled.div`
     position: fixed;
@@ -42,6 +47,7 @@ const NavbarContainre = styled.div`
             font-weight: 200;
             font-size: 15px;
             position: relative;
+            /* transition: all 1s ease; */
         }
 
         > span::after {
@@ -58,20 +64,27 @@ const NavbarContainre = styled.div`
             display: none;
         }
 
-        > span:nth-child(1)::before {
-            content: "";
+        > span:nth-child(1) {
+            /* transition: all 1s ease; */
+        }
+        > span:nth-child(1) .navbar-collection {
             position: fixed;
             background: var(--black-gradient);
             width: 100%;
-            height: 100vh;
-            display: none;
+            height: 650px;
+            visibility: hidden;
+            opacity: 0;
             top: 0px;
             left: 0;
             border-top: 88px solid transparent;
+            z-index: -10;
+            transition: all 0.5s ease;
         }
-        > span:nth-child(1):hover::before {
-            display: block;
-            z-index: -1;
+
+        > span:nth-child(1):hover .navbar-collection {
+            visibility: visible;
+            opacity: 1;
+            /* transition: all 0.5s ease; */
         }
     }
 
@@ -120,6 +133,7 @@ export const Navbar = () => {
                 <div className="nav-links">
                     <span>
                         Shop <img src={downArrowIcon} alt="arrow-Icon" />
+                        <Collection className="navbar-collection" />
                     </span>
                     <span>Pro It Up</span>
                     <span>Sound of Champions</span>

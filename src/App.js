@@ -1,5 +1,5 @@
 // import { ProductCard } from "./components/ProductCard";
-import { Navbar } from "./components/Navbar";
+import { Navbar } from "./components/navbar/Navbar";
 
 function App() {
     return (
