@@ -9,14 +9,11 @@ import linkedin from "../assets/linkedin.svg";
 import twitter from "../assets/twitter.svg";
 import youtube from "../assets/youtube.svg";
 
+import { TextScroller } from "./TextScroller";
+
 const Foot = styled.div`
     width: 100%;
     margin-bottom: 50px;
-`;
-
-const MoveText = styled.div`
-    height: 75px;
-    background-color: var(--black);
 `;
 
 const Deals = styled.div`
@@ -242,7 +239,18 @@ const Bottom = styled.div`
 export function Footer() {
     return (
         <Foot>
-            <MoveText></MoveText>
+            <TextScroller>
+                <span>India’s No.1 Earwear Audio Brand.</span>
+                <span>India’s No.1 Earwear Audio Brand.</span>
+                <span className="bold">India’s No.1 Earwear Audio Brand.</span>
+                <span>India’s No.1 Earwear Audio Brand.</span>
+                <span>India’s No.1 Earwear Audio Brand.</span>
+                <span className="bold">India’s No.1 Earwear Audio Brand.</span>
+                <span>India’s No.1 Earwear Audio Brand.</span>
+                <span>India’s No.1 Earwear Audio Brand.</span>
+                <span className="bold">India’s No.1 Earwear Audio Brand.</span>
+                <span>India’s No.1 Earwear Audio Brand.</span>
+            </TextScroller>
             <Deals>
                 <div className="cont">
                     <div>
