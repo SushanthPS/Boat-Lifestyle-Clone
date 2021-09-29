@@ -240,16 +240,22 @@ export function Footer() {
     return (
         <Foot>
             <TextScroller>
-                <span>India’s No.1 Earwear Audio Brand.</span>
-                <span>India’s No.1 Earwear Audio Brand.</span>
-                <span className="bold">India’s No.1 Earwear Audio Brand.</span>
-                <span>India’s No.1 Earwear Audio Brand.</span>
-                <span>India’s No.1 Earwear Audio Brand.</span>
-                <span className="bold">India’s No.1 Earwear Audio Brand.</span>
-                <span>India’s No.1 Earwear Audio Brand.</span>
-                <span>India’s No.1 Earwear Audio Brand.</span>
-                <span className="bold">India’s No.1 Earwear Audio Brand.</span>
-                <span>India’s No.1 Earwear Audio Brand.</span>
+                <span>India’s No.1 Earwear Audio Brand.&nbsp; </span>
+                <span>India’s No.1 Earwear Audio Brand.&nbsp;</span>
+                <span className="bold">
+                    India’s No.1 Earwear Audio Brand.&nbsp;{" "}
+                </span>
+                <span>India’s No.1 Earwear Audio Brand.&nbsp; </span>
+                <span>India’s No.1 Earwear Audio Brand. &nbsp;</span>
+                <span className="bold">
+                    India’s No.1 Earwear Audio Brand.&nbsp;{" "}
+                </span>
+                <span>India’s No.1 Earwear Audio Brand.&nbsp; </span>
+                <span>India’s No.1 Earwear Audio Brand.&nbsp; </span>
+                <span className="bold">
+                    India’s No.1 Earwear Audio Brand.&nbsp;{" "}
+                </span>
+                <span>India’s No.1 Earwear Audio Brand.&nbsp; </span>
             </TextScroller>
             <Deals>
                 <div className="cont">
