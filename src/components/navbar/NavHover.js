@@ -83,6 +83,24 @@ const ImgContainer = styled.div`
     }
 `;
 
+const SearchResult = styled.span`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 30px;
+    overflow: hidden;
+
+    & span {
+        width: fit-content;
+        border: 1px solid var(--red);
+        border-radius: 20px;
+        padding: 10px;
+        margin: 2px;
+        font-size: 14px;
+    }
+`;
+
 export const Collection = () => {
     return (
         <span className="navbar-collection">
@@ -99,10 +117,12 @@ export const Collection = () => {
 
 export const SearchResults = () => {
     return (
-        <span className="search-results">
+        <SearchResult className="search-results">
             <span>Dummy data</span>
             <span>Lorem ipsum dolor</span>
             <span>Lorem.</span>
-        </span>
+            <span>Dummy data</span>
+            <span>Lorem ipsum dolor</span>
+        </SearchResult>
     );
 };

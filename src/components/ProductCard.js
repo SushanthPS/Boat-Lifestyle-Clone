@@ -8,10 +8,6 @@ const CardContainer = styled.div`
     border-radius: 8px;
     cursor: pointer;
     position: relative;
-
-    // remove this style later
-    box-sizing: unset;
-    border: 1px solid #000;
 `;
 
 const InnerImgContainer = styled.div`
