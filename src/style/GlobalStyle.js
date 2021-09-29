@@ -16,7 +16,12 @@ const GlobalStyle = createGlobalStyle`
 
     body{
         font-family: 'Montserrat', sans-serif;
+
+        z-index: -1;
+        
+
         background: var(--black);
+
     }
 
     button{
