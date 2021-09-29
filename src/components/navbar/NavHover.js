@@ -96,3 +96,13 @@ export const Collection = () => {
         </span>
     );
 };
+
+export const SearchResults = () => {
+    return (
+        <span className="search-results">
+            <span>Dummy data</span>
+            <span>Lorem ipsum dolor</span>
+            <span>Lorem.</span>
+        </span>
+    );
+};

@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 // importing Custom sub-Components
-import { Collection } from "./NavHover";
+import { Collection, SearchResults } from "./NavHover";
 
 // importing assets
 import logo from "../../assets/boat-logo.svg";
@@ -107,6 +107,7 @@ const SearchBox = styled.div`
     font-size: 16px;
     font-weight: 300;
     letter-spacing: 1px;
+    position: relative;
 
     & img {
         margin-left: 18px;
@@ -114,6 +115,21 @@ const SearchBox = styled.div`
     }
     input {
         border: none;
+    }
+
+    input ~ .search-results {
+        position: fixed;
+        width: 235px;
+        height: 230px;
+        top: 60px;
+        background: var(--black-gradient);
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.2s ease 0.5s;
+    }
+    input:focus ~ .search-results {
+        visibility: visible;
+        opacity: 1;
     }
 `;
 
@@ -145,6 +161,7 @@ export const Navbar = () => {
                     <SearchBox>
                         <img src={searchIcon} alt="search" />
                         <input type="text" placeholder="Search..." />
+                        <SearchResults />
                     </SearchBox>
                     <div>
                         <Link to="/coupon">
