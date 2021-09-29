@@ -24,12 +24,15 @@ const NavbarContainre = styled.div`
         cursor: pointer;
     }
 
+    & > div:nth-child(1) {
+        width: 216px;
+    }
+
     & > div:nth-child(2) {
         width: 390px;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
-
+        justify-content: space-between;
         > span:nth-child(1) {
             font-weight: 500;
             font-size: 16px;
@@ -38,11 +41,42 @@ const NavbarContainre = styled.div`
         > span {
             font-weight: 200;
             font-size: 15px;
+            position: relative;
+        }
+
+        > span::after {
+            content: "";
+            position: absolute;
+            height: 12px;
+            width: 1px;
+            background: var(--red);
+            top: 22%;
+            right: -15px;
+        }
+
+        > span:nth-child(4)::after {
+            display: none;
+        }
+
+        > span:nth-child(1)::before {
+            content: "";
+            position: fixed;
+            background: var(--black-gradient);
+            width: 100%;
+            height: 100vh;
+            display: none;
+            top: 0px;
+            left: 0;
+            border-top: 88px solid transparent;
+        }
+        > span:nth-child(1):hover::before {
+            display: block;
+            z-index: -1;
         }
     }
 
     & > div:nth-child(3) {
-        width: 390px;
+        width: 380px;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
