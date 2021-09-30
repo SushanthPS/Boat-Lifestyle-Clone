@@ -1,7 +1,8 @@
-import { Navbar } from "./navbar/Navbar";
+import { Navbar } from "../navbar/Navbar";
 import { ImageSlider } from "./ImageSlider";
-import { Footer } from "./Footer";
+import { Footer } from "../Footer";
 import { Video } from "./Video";
+import { ImageSlider2 } from "./ImageSlider2";
 import { Blog } from "./blog/Blog";
 
 export const HomePage = () => {
@@ -11,7 +12,7 @@ export const HomePage = () => {
             <ImageSlider />
             {/* ComplexSlider */}
             <Video />
-            {/* ImageSlider2 */}
+            <ImageSlider2 />
             <Blog />
             {/* The boAthead Vibe */}
             {/* Qoute Slider */}
