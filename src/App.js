@@ -7,6 +7,7 @@ import { Login } from "./components/Login";
 import { Video } from "./components/Video";
 
 import { Register } from "./components/Register";
+import { Blog } from "./components/blog/Blog";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
             {/* <Login /> */}
             <ImageSlider />
             <Video />
+            <Blog />
             {/* <ProductCard /> */}
             <Footer />
         </div>
