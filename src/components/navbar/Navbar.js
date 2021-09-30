@@ -47,7 +47,11 @@ const NavbarContainre = styled.div`
             font-weight: 200;
             font-size: 15px;
             position: relative;
-            /* transition: all 1s ease; */
+            transition: all 0.2s ease;
+        }
+
+        > span:hover {
+            color: var(--red);
         }
 
         > span::after {

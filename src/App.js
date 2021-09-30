@@ -7,16 +7,17 @@ import { Video } from "./components/Video";
 import { Register } from "./components/Register";
 import { Error } from "./components/Error";
 import { Chatbot } from "./components/Chatbot";
+import { Blog } from "./components/blog/Blog";
 
 function App() {
     return (
         <div className="App">
             <Navbar />
-            <Error />
-            {/* <Login />
-            <Video /> */}
-            {/* <ImageSlider />
-            <ProductCard /> */}
+            {/* <Login /> */}
+            <ImageSlider />
+            <Video />
+            <Blog />
+            {/* <ProductCard /> */}
             <Footer />
         </div>
     );
