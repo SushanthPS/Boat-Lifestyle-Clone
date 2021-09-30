@@ -35,8 +35,8 @@ const ChatButton = styled.div`
 const Chat = styled.div`
     display: block;
     border-radius: 8px;
-    bottom: 670px;
-    left: 78%;
+    bottom: 80%;
+    right: 3%;
     position: fixed;
     width: 370px;
     min-width: 320px;
@@ -44,6 +44,7 @@ const Chat = styled.div`
     background: white;
     box-shadow: 0 5px 40px rgba(0, 0, 0, 0.16) !important;
     line-height: 0.6;
+    /* transition: all 0.5s ease; */
 
     .heading {
         height: 65px;
@@ -205,7 +206,7 @@ export function Chatbot() {
     return (
         <>
             {chat ? (
-                <Chat>
+                <Chat className="chat">
                     <div className="heading">
                         <img
                             src="https://cdn.yellowmessenger.com/4SqmwIeWehBG1604648317025.jpg"
@@ -260,7 +261,7 @@ export function Chatbot() {
                     </div>
                 </Chat>
             ) : null}
-            <ChatButton onClick={() => showChat(!chat)}>
+            <ChatButton className="chat-button" onClick={() => showChat(!chat)}>
                 <img
                     src={
                         chat
