@@ -8,15 +8,14 @@ import { Video } from "./components/Video";
 
 import { Register } from "./components/Register";
 
-
 function App() {
     return (
         <div className="App">
             <Navbar />
-            <Login />
+            {/* <Login /> */}
+            <ImageSlider />
             <Video />
-            {/* <ImageSlider />
-            <ProductCard /> */}
+            {/* <ProductCard /> */}
             <Footer />
         </div>
     );

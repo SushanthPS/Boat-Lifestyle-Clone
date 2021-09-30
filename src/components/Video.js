@@ -31,7 +31,14 @@ export const Video = () => {
             </TextScroller>
             <VideoContainer>
                 <p>hello</p>
-                <video src={video} width="90%" controls autoPlay muted></video>
+                <video
+                    src={video}
+                    width="90%"
+                    controls
+                    loop
+                    autoPlay
+                    muted
+                ></video>
             </VideoContainer>
         </>
     );
