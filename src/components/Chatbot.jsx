@@ -46,6 +46,10 @@ const Chat = styled.div`
     line-height: 0.6;
     /* transition: all 0.5s ease; */
 
+    @media screen and (min-width: 1700px) {
+        bottom: 72%;
+    }
+
     .heading {
         height: 65px;
         background-color: black;
