@@ -8,16 +8,17 @@ import { Register } from "./components/Register";
 import { Error } from "./components/Error";
 import { Chatbot } from "./components/Chatbot";
 import { Blog } from "./components/blog/Blog";
+import { Champions } from "./components/Champions";
 
 function App() {
     return (
         <div className="App">
             <Navbar />
-            {/* <Login /> */}
-            <ImageSlider />
+            <Champions />
+            {/* <ImageSlider />
             <Video />
             <Blog />
-            {/* <ProductCard /> */}
+            <ProductCard /> */}
             <Footer />
         </div>
     );
