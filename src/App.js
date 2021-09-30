@@ -7,16 +7,17 @@ import { Login } from "./components/Login";
 import { Video } from "./components/Video";
 
 import { Register } from "./components/Register";
-
+import { Blog } from "./components/blog/Blog";
 
 function App() {
     return (
         <div className="App">
             <Navbar />
-            <Login />
+            {/* <Login /> */}
+            <ImageSlider />
             <Video />
-            {/* <ImageSlider />
-            <ProductCard /> */}
+            <Blog />
+            {/* <ProductCard /> */}
             <Footer />
         </div>
     );

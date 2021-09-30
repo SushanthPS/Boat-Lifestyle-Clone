@@ -5,7 +5,7 @@ import styled from "styled-components";
 const MovingText = styled.div`
     display: flex;
     align-items: center;
-    height: 70px;
+    height: 100px;
     background-color: var(--black);
     font-weight: 700;
     font-size: 30px;
