@@ -9,15 +9,12 @@ import { Error } from "./components/Error";
 import { Chatbot } from "./components/Chatbot";
 import { Blog } from "./components/blog/Blog";
 import ProductPage from "./components/ProductPage/ProductPage";
+import { HomePage } from "./components/HomePage";
 
 function App() {
     return (
         <div className="App">
-            <Navbar />
-
-            <Error />
-
-            <Footer />
+            <HomePage />
         </div>
     );
 }
