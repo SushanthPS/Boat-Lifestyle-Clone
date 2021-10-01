@@ -1,6 +1,11 @@
 export const champions = [
     {
         id: 1,
+        features: [
+            "Signature Sound",
+            "Power Packed Playback",
+            "Light As A Feather",
+        ],
         name: "BOAT Airdopes 131 CSK Edition",
         category: "LIMITED EDITION",
         rating: 2,
@@ -17,6 +22,11 @@ export const champions = [
     },
     {
         id: 2,
+        features: [
+            "Ergonomic & Comfortable Design",
+            "BOAT Signature Sound",
+            "Powered By Qualcomm ",
+        ],
         name: "BOAT Rockerz 255 KKR Edition",
         category: "LIMITED EDITION",
         rating: 5,
@@ -33,6 +43,11 @@ export const champions = [
     },
     {
         id: 3,
+        features: [
+            "IPX7 Water And Sweat Resistance",
+            "Unstoppable Battery",
+            "Stay Hooked Without Interruptions",
+        ],
         name: "BOAT Airdopes 441 DC Edition",
         category: "LIMITED EDITION",
         rating: 5,
@@ -49,6 +64,11 @@ export const champions = [
     },
     {
         id: 4,
+        features: [
+            "Up to 8 Hours Nonstop Playback",
+            "Premium HD Audio",
+            "Limited Edition Series",
+        ],
         name: "Rockerz 600 Mumbai Indians Edition",
         category: "LIMITED EDITION",
         rating: 5,
@@ -65,6 +85,11 @@ export const champions = [
     },
     {
         id: 5,
+        features: [
+            "Super Extra Bass",
+            "Premium audio with 10mm drivers",
+            "Equipped with 3.5mm angled jack",
+        ],
         name: "BOAT BassHeads 152 KKR Edition",
         category: "LIMITED EDITION",
         rating: 5,
@@ -81,6 +106,7 @@ export const champions = [
     },
     {
         id: 6,
+        features: ["Non-stop playback ", "Signature Sound", "Featherweight "],
         name: "BOAT Airdopes 131 MI Edition",
         category: "LIMITED EDITION",
         rating: 3,
@@ -97,6 +123,11 @@ export const champions = [
     },
     {
         id: 7,
+        features: [
+            "IPX7 Sweat & Water Resistance",
+            "5 hours of playtime",
+            "500mAh battery",
+        ],
         name: "BOAT Airdopes 441 KKR Edition",
         category: "LIMITED EDITION",
         rating: 4,
@@ -113,6 +144,11 @@ export const champions = [
     },
     {
         id: 8,
+        features: [
+            "Up to 8H Nonstop Playback",
+            "Captivating HD Sound",
+            "Faux Leather Headphones ",
+        ],
         name: "BOAT Rockerz 600 KKR Edition",
         category: "LIMITED EDITION",
         rating: 5,
@@ -129,6 +165,11 @@ export const champions = [
     },
     {
         id: 9,
+        features: [
+            "Light On Ears, Heavy On Performance",
+            "BOAT Signature Sound",
+            "12 hours of overall playback",
+        ],
         name: "BOAT Airdopes 131 KKR Edition",
         category: "LIMITED EDITION",
         rating: 5,
@@ -145,6 +186,11 @@ export const champions = [
     },
     {
         id: 10,
+        features: [
+            "Ergonomic fit",
+            "BOAT Signature Sound",
+            "Powered By Qualcomm",
+        ],
         name: "BOAT Rockerz 255 CSK Edition",
         category: "LIMITED EDITION",
         rating: 5,
@@ -161,6 +207,11 @@ export const champions = [
     },
     {
         id: 11,
+        features: [
+            "IPX7 Water And Sweat Resistance",
+            "5 hours of playtime",
+            "500mAh charging ",
+        ],
         name: "BOAT Airdopes 441 RCB Edition",
         category: "LIMITED EDITION",
         rating: 3,
@@ -177,6 +228,11 @@ export const champions = [
     },
     {
         id: 12,
+        features: [
+            "Ergonomic & Comfortable Design",
+            "BOAT Signature Sound",
+            "Powered By Qualcomm",
+        ],
         name: "BOAT Rockerz 255 DC Edition",
         category: "LIMITED EDITION",
         rating: 3,
@@ -193,6 +249,11 @@ export const champions = [
     },
     {
         id: 13,
+        features: [
+            "Resistant To Sweat And Obstacles",
+            "BOAT Signature Sound",
+            "500 mAh battery",
+        ],
         name: "BOAT Airdopes 441 CSK Edition",
         category: "LIMITED EDITION",
         rating: 5,
@@ -209,6 +270,11 @@ export const champions = [
     },
     {
         id: 14,
+        features: [
+            "Super Extra Bass",
+            "8 Hours Nonstop Playback",
+            "Lightweight and Portable",
+        ],
         name: "BOAT Rockerz 400 KXIP Edition",
         category: "LIMITED EDITION",
         rating: 5,
@@ -225,6 +291,11 @@ export const champions = [
     },
     {
         id: 15,
+        features: [
+            "IPX7 Sweat & Water Resistance",
+            "500mAh carry cum charging case ",
+            " 5 hours of playtime per charge ",
+        ],
         name: "BOAT Airdopes 441 MI Edition",
         category: "LIMITED EDITION",
         rating: 4,
@@ -241,6 +312,11 @@ export const champions = [
     },
     {
         id: 16,
+        features: [
+            "Lightweight & Dynamic",
+            "BOAT Signature Sound",
+            " 12 hours of playback time ",
+        ],
         name: "BOAT‌ ‌Airdopes 131‌ DC Edition‌",
         category: "LIMITED EDITION",
         rating: 4,
@@ -257,6 +333,11 @@ export const champions = [
     },
     {
         id: 17,
+        features: [
+            "Super Extra Bass",
+            "8 Hours Nonstop Playback",
+            "Lightweight and Portable",
+        ],
         name: "BOAT Rockerz 400 MI Edition",
         category: "LIMITED EDITION",
         rating: 5,
@@ -274,6 +355,11 @@ export const champions = [
     },
     {
         id: 18,
+        features: [
+            "Perfect metal finish tipped",
+            "Dynamic bass",
+            " Flexible And Hassle Free",
+        ],
         name: "BOAT Bassheads 172 KKR Edition",
         category: "LIMITED EDITION",
         rating: 5,
@@ -290,6 +376,11 @@ export const champions = [
     },
     {
         id: 19,
+        features: [
+            "Stylish Hawk-inspired Design",
+            "Premium HD Sound",
+            "3.5 mm Jack",
+        ],
         name: "BassHeads 100 MI Edition",
         category: "LIMITED EDITION",
         rating: 5,
@@ -306,6 +397,11 @@ export const champions = [
     },
     {
         id: 20,
+        features: [
+            "Optimum Wireless Connectivity",
+            "5 Hours of Playback Time",
+            "Premium HD Sound Quality",
+        ],
         name: "Stone 260 CSK Edition",
         category: "LIMITED EDITION",
         rating: 5,
@@ -322,6 +418,11 @@ export const champions = [
     },
     {
         id: 21,
+        features: [
+            "boAt Signature Sound",
+            "Connected every moment",
+            "Featherweight",
+        ],
         name: "BOAT Airdopes 131 - Wireless Earbuds",
         category: "WIRELESS EARBUDS",
         rating: 4,
@@ -340,6 +441,11 @@ export const champions = [
     },
     {
         id: 22,
+        features: [
+            "Play-Time Up To 8 Hours",
+            "HD Premium Sound",
+            "IPX5 Sweat and Water Resistance",
+        ],
         name: "BOAT Rockerz 245 V2",
         category: "BLUETOOTH EARPHONES",
         rating: 4,
@@ -358,6 +464,11 @@ export const champions = [
     },
     {
         id: 23,
+        features: [
+            "Limitless with ASAP Charge",
+            "True Wireless Bluetooth V5.0",
+            "INSTA WAKE' n' Pair Technology",
+        ],
         name: "boAt Airdopes 402 - Wireless Earbuds",
         category: "WIRELESS EARBUDS",
         rating: 4,
@@ -376,6 +487,11 @@ export const champions = [
     },
     {
         id: 24,
+        features: [
+            "Alexa Voice Assistant",
+            "1.69 INCHES BIG SQUARE DISPLAY",
+            "MULTIPLE WATCH FACES",
+        ],
         name: "BOAT‌ Watch Xtend‌",
         category: "SMART WATCHES",
         rating: 4,
@@ -394,6 +510,11 @@ export const champions = [
     },
     {
         id: 25,
+        features: [
+            "14W boAt Signature Sound",
+            "Up to 9H Nonstop Plays",
+            "IPX7 Water & Splash Shield",
+        ],
         name: "Stone 1200‌",
         category: "BLUETOOTH SPEAKERS",
         rating: 4,
@@ -412,6 +533,11 @@ export const champions = [
     },
     {
         id: 26,
+        features: [
+            "Lightweight Secure Fit Design",
+            "Immersive Audio",
+            "An Absolute Experience",
+        ],
         name: "BOAT BassHeads 103‌",
         category: "WIRED EARPHONES",
         rating: 5,
@@ -430,6 +556,11 @@ export const champions = [
     },
     {
         id: 27,
+        features: [
+            "4 hours of playtime per charge",
+            " IPX5 Sweat and Water resistance",
+            "Flawless sound with BT v5.0",
+        ],
         name: "BOAT Airdopes 381 - In Ear Wireless Earbuds",
         category: "WIRELESS EARBUDS",
         rating: 5,
@@ -448,6 +579,11 @@ export const champions = [
     },
     {
         id: 28,
+        features: [
+            "Fast Charge Technology",
+            "Immersive Sound",
+            "One Press Voice Assistant",
+        ],
         name: "BOAT Rockerz 235 V2",
         category: "BLUETOOTH EARPHONES",
         rating: 5,
@@ -466,6 +602,11 @@ export const champions = [
     },
     {
         id: 29,
+        features: [
+            "Precise health and fitness monitoring",
+            "Full-Touch 2.5D Curved Display",
+            "Keep Track Of Your SpO2 Level",
+        ],
         name: "BOAT Storm",
         category: "SMART WATCHES",
         rating: 5,
@@ -484,6 +625,11 @@ export const champions = [
     },
     {
         id: 30,
+        features: [
+            "Up to 15H Nonstop Audio Bliss",
+            "10MM TITANIUM DRIVERS",
+            "Magnetic Earbuds",
+        ],
         name: "BOAT 103 Wireless",
         category: "BLUETOOTH EARPHONES",
         rating: 4,
@@ -502,6 +648,11 @@ export const champions = [
     },
     {
         id: 31,
+        features: [
+            "7 hours of Detonation",
+            "HD explosive sound",
+            "Aligned easy access control",
+        ],
         name: "Stone Grenade",
         category: "BLUETOOTH SPEAKERS",
         rating: 5,
@@ -518,6 +669,11 @@ export const champions = [
     },
     {
         id: 32,
+        features: [
+            "15H Nonstop Play",
+            "8mm Drivers: Immersive Audio",
+            "Magnetic Earbuds",
+        ],
         name: "BOAT 102 Wireless",
         category: "BLUETOOTH EARPHONES",
         rating: 5,
@@ -536,6 +692,11 @@ export const champions = [
     },
     {
         id: 33,
+        features: [
+            "ASAP Fast Charge Technology",
+            "40H Nonstop Audio Bliss",
+            "Qualcomm® aptX™ & aptX™ HD",
+        ],
         name: "Rockerz 385 V2",
         category: "BLUETOOTH EARPHONES",
         rating: 5,
@@ -552,6 +713,11 @@ export const champions = [
     },
     {
         id: 34,
+        features: [
+            "14H Total Playback",
+            "Lightweight Ergonomic Earbuds",
+            "Optimum Bluetooth V5.0.",
+        ],
         name: "BOAT Airdopes 121 v2 - Wireless Earbuds",
         category: "BLUETOOTH EARPHONES",
         rating: 4,
@@ -570,6 +736,11 @@ export const champions = [
     },
     {
         id: 35,
+        features: [
+            "40H Nonstop Playback",
+            "BOAT Signature Sound ",
+            "Powered By Qualcomm",
+        ],
         name: "BOAT Rockerz 255 Pro+",
         category: "BLUETOOTH EARPHONES",
         rating: 4,
@@ -588,6 +759,11 @@ export const champions = [
     },
     {
         id: 36,
+        features: [
+            "10 Hours of Dynamic Playtime",
+            "30 Hours Nonstop Audio Bliss",
+            "BOAT Signature Sound",
+        ],
         name: "Rockerz 330",
         category: "BLUETOOTH EARPHONES",
         rating: 5,

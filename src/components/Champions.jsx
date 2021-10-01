@@ -1,6 +1,6 @@
 import styled from "styled-components";
-
 import { champions } from "../db";
+import { ProductCard } from "./ProductCard";
 
 const Container = styled.div`
     margin-left: auto;
@@ -94,6 +94,18 @@ const Container = styled.div`
         font-weight: 500;
         margin-bottom: 1em;
     }
+
+    .data-cont {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .data-cont > h2 {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 1.2em;
+        color: var(--white);
+    }
 `;
 
 export function Champions() {
@@ -139,6 +151,14 @@ export function Champions() {
                         </p>
                         <small>*T&C apply</small>
                     </div>
+                </div>
+            </div>
+            <div className="data-cont">
+                <h2>Sound of Champions</h2>
+                <div className="data-grid">
+                    {champions.map((el) => (
+                        <ProductCard el={el}></ProductCard>
+                    ))}
                 </div>
             </div>
         </Container>

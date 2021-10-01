@@ -15,11 +15,6 @@ function App() {
         <div className="App">
             <Navbar />
             <Champions />
-            <ProductCard />
-            {/* <ImageSlider />
-            <Video />
-            <Blog />
-            <ProductCard /> */}
             <Footer />
         </div>
     );
