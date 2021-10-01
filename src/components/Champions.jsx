@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { champions } from "../db";
 import { ProductCard } from "./ProductCard";
+import { Chatbot } from "./Chatbot";
 
 const Container = styled.div`
     margin-left: auto;
@@ -54,9 +55,11 @@ const Container = styled.div`
 
     .section-1-text {
         position: absolute;
-        left: 50%;
-        right: 50%;
-        transform: translate(-50%, -50%);
+        left: 6.3%;
+        top: 50%;
+        height: 180px;
+        /* transform: translate(-50%, -50%); */
+        transform-origin: left;
         bottom: -5%;
         background-color: white;
         border-radius: 20px;
@@ -119,6 +122,7 @@ const Container = styled.div`
 export function Champions() {
     return (
         <Container>
+            <Chatbot />
             <div className="main-banner">
                 <img
                     src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/IPL_sec_1.jpg?v=1632132839"

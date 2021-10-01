@@ -43,6 +43,11 @@ const NavbarContainre = styled.div`
             font-size: 16px;
         }
 
+        img {
+            //down tick for shop and more
+            margin-bottom: 2px;
+        }
+
         > span {
             font-weight: 200;
             font-size: 15px;
