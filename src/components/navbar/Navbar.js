@@ -183,7 +183,7 @@ export const Navbar = () => {
                         </Link>
                     </div>
                     <div>
-                        <Link to="/login">
+                        <Link to="/account/login">
                             <img src={avatarIcon} alt="avatarIcon" />
                         </Link>
                     </div>
