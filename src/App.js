@@ -1,13 +1,16 @@
-import { HomePage } from "./components/homepage/HomePage";
+import { ProductCard } from "./components/ProductCard";
 import { Navbar } from "./components/navbar/Navbar";
 import { Footer } from "./components/Footer";
-import { ProductCard } from "./components/ProductCard";
+import { ImageSlider } from "./components/ImageSlider";
+import { Login } from "./components/Login";
 
 function App() {
     return (
         <div className="App">
             <Navbar />
-            {/* <HomePage /> */}
+            <Login />
+            {/* <ImageSlider />
+            <ProductCard /> */}
             <Footer />
         </div>
     );
