@@ -1,13 +1,13 @@
 import { HomePage } from "./components/homepage/HomePage";
 import { Navbar } from "./components/navbar/Navbar";
 import { Footer } from "./components/Footer";
-import { ProductCard } from "./components/ProductCard";
+import { Champions } from "./components/Champions";
 
 function App() {
     return (
         <div className="App">
             <Navbar />
-            {/* <HomePage /> */}
+            <Champions />
             <Footer />
         </div>
     );
