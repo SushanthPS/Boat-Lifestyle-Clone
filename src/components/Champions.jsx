@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import { champions } from "../db";
+
 const Container = styled.div`
     margin-left: auto;
     margin-right: auto;
