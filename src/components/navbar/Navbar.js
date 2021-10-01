@@ -102,6 +102,10 @@ const NavbarContainre = styled.div`
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+
+        & img {
+            margin-top: 3px;
+        }
     }
 `;
 
@@ -172,6 +176,7 @@ export const Navbar = () => {
                         <input type="text" placeholder="Search..." />
                         <SearchResults />
                     </SearchBox>
+
                     <div>
                         <Link to="/coupon">
                             <img src={couponIcon} alt="couponIcon" />
