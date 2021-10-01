@@ -106,6 +106,14 @@ const Container = styled.div`
         line-height: 1.2em;
         color: var(--white);
     }
+
+    .data-grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-evenly;
+        margin-top: 30px;
+        row-gap: 70px;
+    }
 `;
 
 export function Champions() {
