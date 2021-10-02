@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import Variables from "./Variables";
+import { keyframes } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
     ${Variables};
@@ -29,6 +30,15 @@ const GlobalStyle = createGlobalStyle`
 
     button{
         cursor: pointer;
+    }
+
+    @keyframe rotation {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
     }
 
 `;
