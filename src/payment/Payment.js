@@ -1,10 +1,12 @@
 import styled from "styled-components";
-import leftArrow from "../assets/left-arrow.svg";
 import { Link } from "react-router-dom";
+import leftArrow from "../assets/left-arrow.svg";
+import paytmLogo from "../assets/paytm-logo.svg";
+import qrCode from "../assets/qr-code.svg";
 
 const PaymentContainer = styled.div`
     width: 100%;
-    height: 100vh;
+    height: 1270px;
     background: var(--ligth-white);
 
     & > div {
@@ -20,10 +22,13 @@ const PaymentContainer = styled.div`
             margin: 100px auto 36px auto;
         }
 
-        > .payment-section-1 {
-            padding-left: 17px;
-            height: 128px;
+        > section {
             background: var(--ligth-light-white);
+            padding-left: 17px;
+        }
+
+        > .payment-section-1 {
+            height: 128px;
             border: 1px solid transparent;
             position: relative;
 
@@ -67,6 +72,72 @@ const PaymentContainer = styled.div`
                 top: 77px;
             }
         }
+        > .payment-section-2 {
+            height: 200px;
+            margin: 16px auto;
+            border: 1px solid transparent;
+            position: relative;
+
+            .section2-title {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 20px;
+                text-transform: uppercase;
+                margin-top: 28px;
+            }
+            .section2-dis {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 20px;
+                margin-top: 16px;
+            }
+            .paytm-logo {
+                margin-top: 16px;
+                margin-left: -5px;
+            }
+
+            .qr-code {
+                position: absolute;
+                top: 24px;
+                right: 63px;
+                cursor: pointer;
+            }
+        }
+
+        > .payment-section-3 {
+            border: 1px solid #000;
+            height: 648px;
+
+            .section3-title {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 20px;
+                text-transform: uppercase;
+                margin-top: 28px;
+            }
+
+            .anchor {
+                margin-top: 57px;
+                display: flex;
+                align-items: center;
+
+                > div {
+                    height: 12px;
+                    width: 12px;
+                    border-radius: 50%;
+                    background: #042e6f;
+                    display: inline-block;
+                    box-shadow: 0 0 0 10px #2ec7f4;
+                    margin-left: 12px;
+                }
+                .paytm-logo {
+                    margin-left: 14px;
+                }
+            }
+        }
     }
 `;
 
@@ -88,7 +159,29 @@ export const Payment = () => {
                         ₹ <span>1,499.00</span>
                     </p>
                 </section>
-                <section className="payment-section-2"></section>
+                <section className="payment-section-2">
+                    <p className="section2-title">
+                        Pay Instantly using QR code
+                    </p>
+                    <p className="section2-dis">Scan QR Code using paytm app</p>
+                    <img
+                        className="paytm-logo"
+                        src={paytmLogo}
+                        alt={paytmLogo}
+                    />
+                    <img className="qr-code" src={qrCode} alt={qrCode} />
+                </section>
+                <section className="payment-section-3">
+                    <p className="section3-title">Select an option to pay</p>
+                    <div className="anchor">
+                        <div> </div>
+                        <img
+                            className="paytm-logo"
+                            src={paytmLogo}
+                            alt={paytmLogo}
+                        />
+                    </div>
+                </section>
             </div>
         </PaymentContainer>
     );
