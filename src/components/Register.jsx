@@ -171,8 +171,10 @@ export function Register() {
                                 />
                             </p>
                             <span>
-                                <Link>Log in with an existing account</Link> or{" "}
-                                <Link> Return to Store</Link>
+                                <Link to="/account/login">
+                                    Log in with an existing account&nbsp;
+                                </Link>
+                                or <Link to="/"> Return to Store</Link>
                             </span>
                         </div>
                     </Form>

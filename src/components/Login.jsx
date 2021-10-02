@@ -1,10 +1,17 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
     height: 525px;
     background-color: var(--white);
     padding-bottom: 60px;
     border: 0.1px solid black;
+
+    a {
+        color: #ea2127 !important;
+        font-weight: 700;
+        text-decoration: underline;
+    }
 
     .cont {
         max-width: 1280px;
@@ -139,9 +146,6 @@ const Form = styled.form`
     .action-bottom > span {
         margin: 10px 0;
         display: block;
-        color: #ea2127;
-        font-weight: 700;
-        text-decoration: underline;
         transition: color 0.1s, border-color 0.1s;
     }
 `;
@@ -184,7 +188,9 @@ export function Login() {
                                     className="btn"
                                 />
                             </p>
-                            <span>Create account</span>
+                            <Link to="/account/register">
+                                <span>Create account</span>{" "}
+                            </Link>
                         </div>
                     </Form>
                 </div>

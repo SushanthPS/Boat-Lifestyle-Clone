@@ -23,6 +23,9 @@ const GlobalStyle = createGlobalStyle`
         background: var(--black);
 
     }
+    a{
+        color: inherit;
+    }
 
     button{
         cursor: pointer;

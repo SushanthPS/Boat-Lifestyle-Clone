@@ -43,6 +43,11 @@ const NavbarContainre = styled.div`
             font-size: 16px;
         }
 
+        img {
+            //down tick for shop and more
+            margin-bottom: 2px;
+        }
+
         > span {
             font-weight: 200;
             font-size: 15px;
@@ -97,6 +102,10 @@ const NavbarContainre = styled.div`
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+
+        & img {
+            margin-top: 3px;
+        }
     }
 `;
 
@@ -156,7 +165,11 @@ export const Navbar = () => {
                         <Collection className="navbar-collection" />
                     </span>
                     <span>Pro It Up</span>
-                    <span>Sound of Champions</span>
+                    <span>
+                        <Link to="/pages/sound-of-champions">
+                            Sound of Champions
+                        </Link>{" "}
+                    </span>
                     <span>
                         More <img src={downArrowIcon} alt="arrow-Icon" />
                     </span>
@@ -167,13 +180,14 @@ export const Navbar = () => {
                         <input type="text" placeholder="Search..." />
                         <SearchResults />
                     </SearchBox>
+
                     <div>
                         <Link to="/coupon">
                             <img src={couponIcon} alt="couponIcon" />
                         </Link>
                     </div>
                     <div>
-                        <Link to="/login">
+                        <Link to="/account/login">
                             <img src={avatarIcon} alt="avatarIcon" />
                         </Link>
                     </div>

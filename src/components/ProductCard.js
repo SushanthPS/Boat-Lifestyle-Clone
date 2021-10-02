@@ -130,21 +130,31 @@ const CardShopNowButton = styled.button`
     }
 `;
 
-export const ProductCard = () => {
+export const ProductCard = ({ el }) => {
+    const imageFlag = el.image.length > 1 ? true : false;
+    console.log(el.image[1]);
     return (
         <CardContainer>
             <InnerImgContainer>
-                <img src={img2} alt="img" />
-                <img src={img1} alt="img" />
+                <img src={el.image[0]} alt="img" />
+                {imageFlag ? <img src={el.image[1]} alt="img" /> : true}
             </InnerImgContainer>
             <CardData>
-                <p className="product-title">Misfit T200</p>
-                <p className="product-price">Rs.1,499.00</p>{" "}
-                <span className="product-original-price">Rs.1,499.00</span>
+                <p className="product-title">{el.name}</p>
+                <p className="product-price">
+                    Rs.
+                    {(
+                        el.original_price -
+                        Math.floor((el.original_price * el.discount) / 100)
+                    ).toFixed(2)}
+                </p>
+                <span className="product-original-price">
+                    Rs.{el.original_price.toFixed(2)}
+                </span>
                 <ul className="product-features">
-                    <li>120 Minutes battery runtime</li>
-                    <li>0.5-12mm trimming range</li>
-                    <li>Skin-Friendly titanium blades</li>
+                    <li>{el.features[0]}</li>
+                    <li>{el.features[1]}</li>
+                    <li>{el.features[2]}</li>
                 </ul>
                 <svg
                     className="star-icon"
@@ -159,7 +169,7 @@ export const ProductCard = () => {
                         fill="#FF0000"
                     />
                 </svg>
-                <span className="product-rating">4.5</span>
+                <span className="product-rating">{el.rating.toFixed(1)}</span>
                 <CardShopNowButton>
                     <span>Shop Now</span>
                 </CardShopNowButton>
@@ -167,3 +177,28 @@ export const ProductCard = () => {
         </CardContainer>
     );
 };
+
+// pD =  op - (op * dis/100)
+
+//
+// 4.36
+// 4.4
+// {
+//     id: 36,
+//     name: "Rockerz 330",
+//     category: "BLUETOOTH EARPHONES",
+//     rating: 5,
+//     reviews: 180,
+//     original_price: 2990,
+//     discount: 49,
+//     isAvaiable: true,
+//     isNew: true,
+//     isTrending: true,
+//     image: [
+//         "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main3_a08fff6a-7c3d-4663-9499-3421df127e94_720x.png?v=1622014963",
+//         "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main1_15634ca0-9f81-4d11-b891-9a1496f709b1_720x.png?v=1622020932",
+//         "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_12f5e240-7eec-4b32-8121-29594cae6e84_720x.png?v=1622020932",
+//     ],
+//     features: ["abc", "cde", "xyz"]
+//     color: ["black", "red", "yellow"],
+// };

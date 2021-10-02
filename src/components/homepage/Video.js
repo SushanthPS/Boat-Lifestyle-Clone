@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import video from "../assets/digital_20_new.mp4";
-import { TextScroller } from "./TextScroller";
+import video from "../../assets/digital_20_new.mp4";
+import { TextScroller } from "../TextScroller";
 
 const VideoContainer = styled.div`
     display: flex;

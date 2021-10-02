@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import arrow from './Images/Vector 14.png';
-import pdf from './Images/Vector.png';
+import styled from "styled-components";
+import arrow from "./Images/Vector 14.png";
+import pdf from "./Images/Vector.png";
 
 const FAQ = styled.div`
     position: absolute;
@@ -10,7 +10,7 @@ const FAQ = styled.div`
     left: 0px;
     background: #ffffff;
 
-  & h2 {
+    & h2 {
         position: absolute;
         width: 10.48%;
         height: 61px;
@@ -21,7 +21,7 @@ const FAQ = styled.div`
         line-height: 61px;
         letter-spacing: 0.01em;
         color: #232323;
-  }
+    }
 
   & div {
       position: absolute;
@@ -29,12 +29,13 @@ const FAQ = styled.div`
       left: 23.46%;
   }
 
-  & details {
+
+    & details {
         cursor: pointer;
         border-bottom: 1px solid black;
         padding-bottom: 16px;
         margin-top: 24px;
-  }
+    }
 
     & details summary {
         list-style: none;
@@ -76,7 +77,7 @@ const FAQ = styled.div`
         font-size: 26px;
         line-height: 32px;
         letter-spacing: 0.01em;
-        color: #FF0000;
+        color: #ff0000;
     }
 
     & .view img {
@@ -105,7 +106,7 @@ const FAQ = styled.div`
         font-weight: 600;
         font-size: 12px;
         line-height: 17px;
-        color: #FFFFFF;
+        color: #ffffff;
     }
 
     & .pdf img {
@@ -115,52 +116,90 @@ const FAQ = styled.div`
         margin-left: 7px;
         margin-top: 9px;
     }
-
 `;
 
 export default function Faq() {
     const details = document.querySelectorAll("details");
-    
+
     details.forEach((targetDetail) => {
         targetDetail.addEventListener("click", () => {
-        details.forEach((detail) => {
-        if (detail !== targetDetail) {
-            detail.removeAttribute("open");
-        }
+            details.forEach((detail) => {
+                if (detail !== targetDetail) {
+                    detail.removeAttribute("open");
+                }
+            });
         });
-    });
     });
     return (
         <FAQ>
             <h2>FAQs</h2>
             <div>
                 <details>
-                    <summary>Q. Is it water resistant?<img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/down-arrow_1.png?v=1616067880" alt="arrow" /></summary>
+                    <summary>
+                        Q. Is it water resistant?
+                        <img
+                            src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/down-arrow_1.png?v=1616067880"
+                            alt="arrow"
+                        />
+                    </summary>
                     <p>Something small enough to escape casual notice.</p>
                 </details>
                 <details>
-                    <summary>Q. Can we Connect by Aux?<img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/down-arrow_1.png?v=1616067880" alt="arrow" /></summary>
+                    <summary>
+                        Q. Can we Connect by Aux?
+                        <img
+                            src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/down-arrow_1.png?v=1616067880"
+                            alt="arrow"
+                        />
+                    </summary>
                     <p>Something small enough to escape casual notice.</p>
                 </details>
                 <details>
-                    <summary>Q. Can we get a charger along with the speaker?<img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/down-arrow_1.png?v=1616067880" alt="arrow" /></summary>
+                    <summary>
+                        Q. Can we get a charger along with the speaker?
+                        <img
+                            src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/down-arrow_1.png?v=1616067880"
+                            alt="arrow"
+                        />
+                    </summary>
                     <p>Something small enough to escape casual notice.</p>
                 </details>
                 <details>
-                    <summary>Q. Does it have an in-built mic for hands-free calling<img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/down-arrow_1.png?v=1616067880" alt="arrow" /></summary>
+                    <summary>
+                        Q. Does it have an in-built mic for hands-free calling
+                        <img
+                            src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/down-arrow_1.png?v=1616067880"
+                            alt="arrow"
+                        />
+                    </summary>
                     <p>Something small enough to escape casual notice.</p>
                 </details>
                 <details>
-                    <summary>Q. What is the battery life of the device?<img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/down-arrow_1.png?v=1616067880" alt="arrow" /></summary>
+                    <summary>
+                        Q. What is the battery life of the device?
+                        <img
+                            src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/down-arrow_1.png?v=1616067880"
+                            alt="arrow"
+                        />
+                    </summary>
                     <p>Something small enough to escape casual notice.</p>
                 </details>
                 <details>
-                    <summary>Q. Can I charge my speakers with a mobile charger?<img src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/down-arrow_1.png?v=1616067880" alt="arrow" /></summary>
+                    <summary>
+                        Q. Can I charge my speakers with a mobile charger?
+                        <img
+                            src="https://cdn.shopify.com/s/files/1/0057/8938/4802/files/down-arrow_1.png?v=1616067880"
+                            alt="arrow"
+                        />
+                    </summary>
                     <p>Something small enough to escape casual notice.</p>
                 </details>
             </div>
             <div className="view">
-                <p>View More<img src={arrow} alt="arrow"/></p>
+                <p>
+                    View More
+                    <img src={arrow} alt="arrow" />
+                </p>
             </div>
             <div className="pdf">
                 <img src={pdf} alt="pdf" />
