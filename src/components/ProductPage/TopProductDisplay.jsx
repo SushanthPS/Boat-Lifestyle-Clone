@@ -3,7 +3,7 @@ import styled from "styled-components";
 import zest from "./Images/image 115.png";
 import star from "./Images/Star11.png";
 import warranty from "./Images/image 116.png";
-import { champions } from "../../db";
+import { champions } from "../../champions";
 import { useState } from "react";
 import tick from "./Images/VectorTick.png";
 
