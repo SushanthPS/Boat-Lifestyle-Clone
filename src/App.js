@@ -10,13 +10,12 @@ import { Navbar } from "./components/navbar/Navbar";
 // import { Blog } from "./components/blog/Blog";
 // import CartPage from './components/CartPage/CartPage';
 // import ProductPage from './components/ProductPage/ProductPage'
-import EnterInformation from "./components/EnterInformation/EnterInformation";
+
 
 function App() {
     return (
         <div className="App">
             <Navbar />
-            <EnterInformation />
             {/* <ProductPage/> */}
             {/* <CartPage /> */}
             {/* <Login /> */}
