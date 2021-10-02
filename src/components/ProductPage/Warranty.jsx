@@ -12,17 +12,17 @@ const Container = styled.div`
 
      & img {  
         position: absolute;
-        width: 328px;
+        width: 24.73%;
         height: 328px;
-        left: 100px;
+        left: 7.54%;
         top: 50px;
      }
 
      & h2 {
         position: absolute;
-        width: 459px;
+        width: 34.61%;
         height: 98px;
-        left: 453px;
+        left: 34.16%;
         top: 106px;
         color: #ffffff;
         font-weight: bold;
@@ -32,7 +32,7 @@ const Container = styled.div`
      }
      & p {
             position: absolute;
-            width: 400px;
+            width: 30.16%;
             height: 72px;
             left: 453px;
             top: 217px;
@@ -47,14 +47,14 @@ const Container = styled.div`
         position: absolute;
         width: 30.3%;
         height: 428px;
-        left: 940px;
+        left: 70.88%;
         top: 0px;
         background: #3C3C3C;
      }
 
      & div img {
         position: absolute;
-        width: 364px;
+        width: 80%;
         height: 382px;
         left: 20px;
         top: 25px;

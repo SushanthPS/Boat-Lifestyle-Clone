@@ -12,9 +12,9 @@ const FAQ = styled.div`
 
     & h2 {
         position: absolute;
-        width: 139px;
+        width: 10.48%;
         height: 61px;
-        left: 205px;
+        left: 23.46%;
         top: 73px;
         font-weight: bold;
         font-size: 50px;
@@ -23,11 +23,12 @@ const FAQ = styled.div`
         color: #232323;
     }
 
-    & div {
-        position: absolute;
-        top: 134px;
-        left: 205px;
-    }
+  & div {
+      position: absolute;
+      top: 134px;
+      left: 23.46%;
+  }
+
 
     & details {
         cursor: pointer;
@@ -38,7 +39,7 @@ const FAQ = styled.div`
 
     & details summary {
         list-style: none;
-        width: 949px;
+        width: 100%;
         font-weight: 600;
         font-size: 26px;
         line-height: 32px;
@@ -61,11 +62,16 @@ const FAQ = styled.div`
         color: #6a6a6a;
     }
 
+    & .view {
+        position: absolute;
+        width: 100%;
+    }
+
     & .view p {
         position: absolute;
         width: 210px;
         height: 32px;
-        left: 409px;
+        left: 22%;
         top: 479px;
         font-weight: 500;
         font-size: 26px;
@@ -81,7 +87,7 @@ const FAQ = styled.div`
 
     & .pdf {
         position: absolute;
-        width: 205.07px;
+        width: 15.46%;
         height: 46px;
         left: 580px;
         top: 670px;
@@ -93,7 +99,7 @@ const FAQ = styled.div`
 
     & .pdf p {
         position: absolute;
-        width: 161px;
+        width: 77.75%;
         height: 17px;
         left: 34px;
         top: 14px;
@@ -105,7 +111,7 @@ const FAQ = styled.div`
 
     & .pdf img {
         top: 14px;
-        width: 14.11px;
+        width: 8.21%;
         height: 17.78px;
         margin-left: 7px;
         margin-top: 9px;

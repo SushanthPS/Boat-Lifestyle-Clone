@@ -13,9 +13,9 @@ const Container = styled.div`
 
   & p {
         position: absolute;
-        width: 349px;
+        width: 24%;
         height: 29px;
-        left: 100px;
+        left: 6.74%;
         top: 37px;
         font-weight: 600;
         font-size: 24px;
@@ -26,7 +26,7 @@ const Container = styled.div`
 
    & .starContainer {
        position: absolute;
-       left: 100px;
+       left: 6.74%;
        top: 88px;
    }
 
@@ -53,7 +53,7 @@ const Container = styled.div`
 
    & button {  
     position: absolute;
-    left: 1081px;
+    left: 81.52%;
     width: 159px;
     height: 37px;
     top: 24px;
@@ -68,9 +68,9 @@ const Container = styled.div`
 
    & .recent {
         position: absolute;
-        width: 139px;
+        width: 10.48%;
         height: 37px;
-        left: 1081px;
+        left: 81.52%;
         top: 224px;
         border: 1px solid #000000;
         box-sizing: border-box;

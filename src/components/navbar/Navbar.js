@@ -165,7 +165,11 @@ export const Navbar = () => {
                         <Collection className="navbar-collection" />
                     </span>
                     <span>Pro It Up</span>
-                    <span>Sound of Champions</span>
+                    <span>
+                        <Link to="/pages/sound-of-champions">
+                            Sound of Champions
+                        </Link>{" "}
+                    </span>
                     <span>
                         More <img src={downArrowIcon} alt="arrow-Icon" />
                     </span>
@@ -183,7 +187,7 @@ export const Navbar = () => {
                         </Link>
                     </div>
                     <div>
-                        <Link to="/login">
+                        <Link to="/account/login">
                             <img src={avatarIcon} alt="avatarIcon" />
                         </Link>
                     </div>

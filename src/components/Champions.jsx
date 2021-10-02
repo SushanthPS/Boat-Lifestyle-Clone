@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { champions } from "../db";
+import { champions } from "../champions";
 import { ProductCard } from "./ProductCard";
 import { Chatbot } from "./Chatbot";
 

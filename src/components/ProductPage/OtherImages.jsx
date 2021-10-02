@@ -12,17 +12,17 @@ const LeftSection = styled.div`
 
     & div {
         position: absolute;
-        width: 410px;
+        width: 30.92%;
         height: 410px;
-        left: 130px;
+        left: 9.80%;
         top: 24px;
     }
 
     & h2 {
         position: absolute;
-        width: 502px;
+        width: 37.85%;
         height: 49px;
-        left: 100px;
+        left: 7.54%;
         top: 448px;
         font-weight: bold;
         font-size: 40px;
@@ -33,9 +33,9 @@ const LeftSection = styled.div`
 
     & p {
         position: absolute;
-        width: 550px;
+        width: 41.47%;
         height: 48px;
-        left: 100px;
+        left: 7.54%;
         top: 516px;
         font-size: 16px;
         line-height: 24px;
@@ -54,9 +54,9 @@ const RightSection = styled.div`
 
     & h2 {
         position: absolute;
-        width: 577px;
+        width: 87.02%;
         height: 98px;
-        left: 41px;
+        left: 6.18%;
         top: 54px;
         font-weight: bold;
         font-size: 40px;
@@ -67,9 +67,9 @@ const RightSection = styled.div`
 
     & p {
         position: absolute;
-        width: 508px;
+        width: 76.67%;
         height: 72px;
-        left: 45px;
+        left: 6.78%;
         top: 169px;
         font-weight: 500;
         font-size: 16px;
@@ -80,9 +80,9 @@ const RightSection = styled.div`
 
     & img {  
         position: absolute;
-        width: 526px;
+        width: 79.33%;
         height: 493px;
-        left: 65px;
+        left: 9.80%;
         top: 248px;
     }
 `;
