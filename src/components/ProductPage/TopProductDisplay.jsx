@@ -18,14 +18,14 @@ const Container = styled.div`
         position: absolute;
         top: 184px;
         left: 12.66%;
-        width: 26.54%;
+        width: 350px;
         height: 416px;
     }
 
     & .imageDiv img {
-        width: 120%;
+        width: 350px;
         margin-top: -45px;
-        margin-left: -3.77%;
+        margin-left: -45px;
     }
 
     & .imageDiv img {
@@ -75,7 +75,7 @@ const Container = styled.div`
         width: 0px;
         height: 0px;
         top: 357px;
-        left: 45.35%;
+        left: 41.35%;
         border-left: 20px solid #ff0000;
         border-top: 14px solid transparent;
         border-bottom: 14px solid transparent;
