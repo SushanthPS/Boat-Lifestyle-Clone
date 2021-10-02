@@ -112,7 +112,6 @@ const PaymentContainer = styled.div`
         }
 
         > .payment-section-3 {
-            border: 1px solid #000;
             height: 648px;
 
             .section3-title {
