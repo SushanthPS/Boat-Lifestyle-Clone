@@ -1,15 +1,15 @@
 import { Navbar } from "./components/navbar/Navbar";
 import { Footer } from "./components/Footer";
 import { Routes } from "./routes/Routes";
-import CartPage from "./components/CartPage/CartPage";
 import ProductPage from "./components/ProductPage/ProductPage";
+import CartPage from "./components/CartPage/CartPage";
 
 function App() {
     return (
         <div className="App">
             <Navbar />
-            {/* <ProductPage /> */}
-            <CartPage />
+            <ProductPage />
+            {/* <CartPage /> */}
             {/* <Routes /> */}
             <Footer />
         </div>
