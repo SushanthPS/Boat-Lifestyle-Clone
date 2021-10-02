@@ -11,9 +11,9 @@ const Container = styled.div`
 
     & > div {
         position: absolute;
-        width: 505px;
+        width: 38.08%;
         height: 414px;
-        left: 100px;
+        left: 7.54%;
         top: 127px;
         background: #000000;
     }
@@ -38,7 +38,7 @@ const Container = styled.div`
         position: absolute;
         width: 50%;
         top: 32px;
-        left: 253px;
+        left: 50%;
         text-align: left;
     }
 
@@ -55,9 +55,9 @@ const Container = styled.div`
 const CelebrityImage = styled.div`
     & img {
         position: absolute;
-        width: 754px;
+        width: 56.86%;
         height: 816px;
-        left: 595px;
+        left: 44.87%;
         top: 2351px;
     }
 `;

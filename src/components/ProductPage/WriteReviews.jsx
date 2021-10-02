@@ -13,7 +13,7 @@ const Container = styled.div`
     
     & .card {
         position: absolute;
-        width: 560px;
+        width: 42.23%;
         height: 240px;
         background: #FFFFFF;
         border: 0.2px solid grey;
@@ -64,18 +64,18 @@ const Container = styled.div`
 
     & .first {
         top: 72px;
-        left: 100px;
+        left: 6.57%;
     }
 
     & .second {
         top: 72px;
-        left: 710px;
+        left: 53.54%;
     }
 
     & .paging {
         position: absolute;
-        width:200px;
-        left: 615px;
+        width:15.08%;
+        left: 46.38%;
         top: 340px;
         font-weight: 500;
         font-size: 26px;

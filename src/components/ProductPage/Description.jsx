@@ -10,9 +10,9 @@ const Desc = styled.div`
 
     & h3 {
         position: absolute;
-        width: 220px;
+        width: 16.59%;
         height: 49px;
-        left: 580px;
+        left: 43.74%;
         top: 40px;
         font-weight: bold;
         font-size: 40px;
@@ -23,9 +23,9 @@ const Desc = styled.div`
 
     & p {
         position: absolute;
-        width: 1128px;
+        width: 85.06%;
         height: 196px;
-        left: 100px;
+        left: 7.54%;
         top: 117px;
         font-size: 16px;
         line-height: 178%;
