@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import styled from "styled-components";
 import loading from "../assets/loading-icon.svg";
-import success from "../assets/success-icon.svg";
 import { keyframes } from "styled-components";
 
 const rotation = keyframes`
