@@ -8,7 +8,7 @@ import { useState } from "react";
 import tick from "./Images/VectorTick.png";
 
 const Container = styled.div`
-    height: 95.38vh;
+    height: 600px;
     width: 100%;
     top: 88px;
     left: 0px;
@@ -16,7 +16,7 @@ const Container = styled.div`
 
     & .imageDiv {
         position: absolute;
-        top: 29.25vh;
+        top: 184px;
         left: 12.66%;
         width: 26.54%;
         height: 416px;
@@ -24,7 +24,7 @@ const Container = styled.div`
 
     & .imageDiv img {
         width: 120%;
-        margin-top: -7.154vh;
+        margin-top: -45px;
         margin-left: -3.77%;
     }
 
@@ -50,11 +50,11 @@ const Container = styled.div`
     }
 
     & .circle {
-        margin-top: 7.14vh;
+        margin-top: 45px;
         margin-left: 3.77%;
         position: absolute;
         width: 80%;
-        height: 45vh;
+        height: 283px;
         border-radius: 150px;
         background-color: gray;
     }
@@ -64,7 +64,7 @@ const Container = styled.div`
         width: 0px;
         height: 0px;
         left: 7.54%;
-        top: 56.75vh;
+        top: 357px;
         border-top: 14px solid transparent;
         border-bottom: 14px solid transparent;
         border-right: 20px solid #ff0000;
@@ -74,7 +74,7 @@ const Container = styled.div`
         position: absolute;
         width: 0px;
         height: 0px;
-        top: 56.75vh;
+        top: 357px;
         left: 45.35%;
         border-left: 20px solid #ff0000;
         border-top: 14px solid transparent;
@@ -121,9 +121,9 @@ const Container = styled.div`
     & .discountPrice {
         position: absolute;
         width: 11.01%;
-        height: 5.08vh;
+        height: 32px;
         left: 79.93%;
-        top: 60.09vh;
+        top: 378px;
         font-size: 26px;
         line-height: 32px;
         text-decoration-line: line-through;
@@ -133,7 +133,7 @@ const Container = styled.div`
     & .save {
         position: absolute;
         width: 12.21%;
-        height: 4.61vh;
+        height: 29px;
         left: 62.97%;
         top: 417px;
         font-size: 24px;
@@ -144,7 +144,7 @@ const Container = styled.div`
     & .tax {
         position: absolute;
         width: 9.27%;
-        height: 3.17vh;
+        height: 20px;
         left: 62.97%;
         top: 448px;
         font-size: 16px;
@@ -163,9 +163,9 @@ const Container = styled.div`
     & .internet {
         position: absolute;
         width: 23.45%;
-        height: 3.17vh;
+        height: 20px;
         left: 62.97%;
-        top: 75.35vh;
+        top: 474px;
         font-size: 16px;
         line-height: 20px;
         color: #b4b4b4;
@@ -174,18 +174,18 @@ const Container = styled.div`
     & .zest {
         position: absolute;
         width: 5.12%;
-        height: 2.54vh;
+        height: 16px;
         left: 85.21%;
-        top: 75.19vh;
+        top: 473px;
     }
 
     & .addToCart,
     .buyItNow {
         position: absolute;
         width: 10.85%;
-        height: 6.23vh;
+        height: 39px;
         left: 62.97%;
-        top: 82.67vh;
+        top: 520px;
         border: 1px solid #ffffff;
         color: white;
         line-height: 17px;
@@ -210,7 +210,7 @@ const Container = styled.div`
         width: 3.92%;
         height: 12px;
         left: 67.87%;
-        top: 1.9%;
+        top: 272px;
         font-size: 10px;
         line-height: 12px;
         color: #9b9b9b;
@@ -219,7 +219,7 @@ const Container = styled.div`
     & .colorCircle {
         position: absolute;
         left: 62.76%;
-        top: 48.48vh;
+        top: 305px;
         border-radius: 14px;
         box-sizing: border-box;
         display: flex;
@@ -236,7 +236,7 @@ const Container = styled.div`
     & .warranty {
         position: absolute;
         width: 100%;
-        height: 13.67vh;
+        height: 86px;
         left: 0px;
         top: 688px;
         background: #2c2c2c;
@@ -381,7 +381,7 @@ export default function TopProductDisplay() {
                         </div>
                     ))}
                 </div>
-                <p className="reviews">{e.reviews}</p>
+                <p className="reviews">{e.reviews}  Reviews</p>
                 <p className="price">₹{putComma(e.original_price)}.00</p>
                 <p className="discountPrice">
                     ₹
