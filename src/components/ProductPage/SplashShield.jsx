@@ -11,17 +11,17 @@ const Splash = styled.div`
 
     & img {
         position: absolute;
-        width: 466px;
+        width: 35.14%;
         height: 414px;
-        left: 100px;
+        left: 7.54%;
         top: 24px;
     }
 
     & h2 {
         position: absolute;
-        width: 577px;
+        width: 43.51%;
         height: 49px;
-        left: 730px;
+        left: 55.05%;
         top: 160px;
         font-weight: bold;
         font-size: 40px;
@@ -32,9 +32,9 @@ const Splash = styled.div`
 
     & p {
         position: absolute;
-        width: 508px;
+        width: 38.31%;
         height: 72px;
-        left: 730px;
+        left: 55.05%;
         top: 213px;
         font-weight: 500;
         font-size: 16px;
