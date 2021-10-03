@@ -47,6 +47,7 @@ export function Routes() {
             <Route path="/cart">
                 <Navbar />
                 <CartPage />
+                {/* <EnterInformation/> */}
             </Route>
 
             <Route exact path="/successful">
