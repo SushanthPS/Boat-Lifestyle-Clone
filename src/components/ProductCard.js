@@ -1,7 +1,4 @@
-import { useParams } from "react-router";
 import styled from "styled-components";
-import img1 from "../assets/img1.png";
-import img2 from "../assets/img2.png";
 import { Link } from "react-router-dom";
 
 const CardContainer = styled.div`
@@ -133,8 +130,6 @@ const CardShopNowButton = styled.button`
 `;
 
 export const ProductCard = ({ el }) => {
-    const { productName } = useParams();
-    console.log(productName);
     const imageFlag = el.image.length > 1 ? true : false;
 
     return (

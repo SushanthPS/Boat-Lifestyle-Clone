@@ -354,11 +354,6 @@ export default function TopProductDisplay() {
     let starsArray = [1, 2, 3, 4, 5];
     starsArray.length = e.rating; // 4
     const [index, setIndex] = useState(0);
-    const putComma = (n) => {
-        let str = String(n);
-        if (n.length < 4) return str;
-        return str[0] + "," + str[1] + str[2] + str[3];
-    };
 
     const changeImage = (k) => {
         if (index === 0 && k === -1) {
