@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
+import { useState } from "react";
+import axios from "axios";
 
 const Container = styled.div`
     height: 705px;
@@ -130,6 +132,28 @@ const Form = styled.form`
 `;
 
 export function Register() {
+    const [data, setData] = useState({});
+    const [flag, setFlag] = useState(false); //to check if registration was successful
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setData({ ...data, [name]: value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        postData();
+    };
+
+    const postData = async () => {
+        try {
+            await axios.post("http://localhost:3002/users", data);
+            setFlag(true);
+        } catch (e) {
+            alert("Invalid Input");
+        }
+    };
+
     return (
         <Container>
             <div className="cont">
@@ -137,7 +161,7 @@ export function Register() {
                     <div className="heading">
                         <h2>Create Account</h2>
                     </div>
-                    <Form>
+                    <Form onSubmit={handleSubmit}>
                         <div className="socials">
                             <iframe
                                 id="social_login_frame"
@@ -148,27 +172,47 @@ export function Register() {
                         </div>
                         <div className="input-box">
                             <label htmlFor="customer_name">First Name</label>
-                            <input type="text" id="customer_name" />
+                            <input
+                                required
+                                name="first_name"
+                                onChange={handleChange}
+                                type="text"
+                                id="customer_name"
+                            />
                         </div>
                         <div className="input-box">
                             <label htmlFor="customer_lname">Last Name</label>
-                            <input type="text" id="customer_lname" />
+                            <input
+                                required
+                                name="last_name"
+                                onChange={handleChange}
+                                type="text"
+                                id="customer_lname"
+                            />
                         </div>
                         <div className="input-box">
                             <label htmlFor="customer_email">Email</label>
-                            <input type="email" id="customer_email" />
+                            <input
+                                required
+                                name="email"
+                                onChange={handleChange}
+                                type="email"
+                                id="customer_email"
+                            />
                         </div>
                         <div className="input-box">
                             <label htmlFor="customer_password">Password</label>
-                            <input type="password" id="customer_password" />
+                            <input
+                                required
+                                name="password"
+                                onChange={handleChange}
+                                type="password"
+                                id="customer_password"
+                            />
                         </div>
                         <div className="action-bottom">
                             <p>
-                                <input
-                                    type="submit"
-                                    value="Create"
-                                    className="btn"
-                                />
+                                <input type="submit" value="Create" />
                             </p>
                             <span>
                                 <Link to="/account/login">
@@ -178,6 +222,11 @@ export function Register() {
                             </span>
                         </div>
                     </Form>
+                    {flag ? (
+                        <Redirect to="/" />
+                    ) : (
+                        <Redirect to="/account/register" />
+                    )}
                 </div>
             </div>
         </Container>

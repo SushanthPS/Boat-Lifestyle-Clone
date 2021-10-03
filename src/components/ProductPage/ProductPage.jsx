@@ -11,7 +11,7 @@ import styled from "styled-components";
 import { useLayoutEffect } from "react";
 
 const ProductContainer = styled.div`
-    margin-bottom: 4470px;
+    margin-bottom: 4450px;
 `;
 
 export default function ProductPage() {

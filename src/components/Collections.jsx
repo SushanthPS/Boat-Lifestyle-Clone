@@ -201,7 +201,7 @@ export function Collections() {
 
                 <div className="data-grid">
                     {data.map((el) => (
-                        <ProductCard el={el}></ProductCard>
+                        <ProductCard key={el._id} el={el}></ProductCard>
                     ))}
                 </div>
             </div>

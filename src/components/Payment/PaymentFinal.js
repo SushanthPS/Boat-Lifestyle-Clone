@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import leftArrow from "../assets/left-arrow.svg";
-import paytmLogo from "../assets/paytm-logo.svg";
-import qrCode from "../assets/qr-code.svg";
+import leftArrow from "../../assets/left-arrow.svg";
+import paytmLogo from "../../assets/paytm-logo.svg";
+import qrCode from "../../assets/qr-code.svg";
 import { useState } from "react";
 
 const PaymentContainer = styled.div`
@@ -297,7 +297,7 @@ export const Payment = () => {
                                     key="input2"
                                 />
                                 <div className="proceed">
-                                    <Link to="/successfull">Verify</Link>
+                                    <Link to="/successful">Verify</Link>
                                 </div>
                             </div>
                         </>
@@ -315,7 +315,6 @@ export const Payment = () => {
                         style={{
                             marginTop: "35px",
                             width: 1200,
-                            marginTop: 35,
                         }}
                     />
                     <div className="secure">
