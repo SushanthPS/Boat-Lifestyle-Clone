@@ -9,6 +9,7 @@ import ProductPage from "../components/ProductPage/ProductPage";
 import { Collections } from "../components/Collections";
 import { Navbar } from "../components/navbar/Navbar";
 import CartPage from "../components/CartPage/CartPage";
+import { Success } from "../components/Success";
 
 export function Routes() {
     return (
@@ -46,7 +47,10 @@ export function Routes() {
             <Route path="/cart">
                 <Navbar />
                 <CartPage />
-                <Footer />
+            </Route>
+
+            <Route exact path="/successful">
+                <Success />
             </Route>
 
             <Route path="/collections/:collectionName">

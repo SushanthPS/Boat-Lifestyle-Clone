@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -156,6 +156,7 @@ export function Login() {
     const [data, setData] = useState([]);
     const [email, setEmail] = useState("");
     const [pass, setPass] = useState("");
+    const [flag, setFlag] = useState(false);
 
     const getData = async () => {
         const res = await axios.get("http://localhost:3002/users");
@@ -172,8 +173,11 @@ export function Login() {
             }
         }
         if (cred) {
-            alert("Working");
-        } else alert("Incorrect email or password");
+            setFlag(true);
+        } else {
+            setFlag(false);
+            alert("Incorrect email or password");
+        }
     };
 
     useEffect(() => {
@@ -232,6 +236,7 @@ export function Login() {
                             </Link>
                         </div>
                     </Form>
+                    {flag ? <Redirect to="/cart" /> : ""}
                 </div>
             </div>
         </Container>
