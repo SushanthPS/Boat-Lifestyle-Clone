@@ -173,7 +173,7 @@ export const ProductCard = ({ el }) => {
                         {el.rating.toFixed(1)}
                     </span>
                     <CardShopNowButton>
-                        <span>Shop Now</span>
+                        <span>Buy Now</span>
                     </CardShopNowButton>
                 </CardData>
             </CardContainer>
