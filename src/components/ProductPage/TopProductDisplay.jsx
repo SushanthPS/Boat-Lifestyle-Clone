@@ -1,11 +1,11 @@
 import styled from "styled-components";
-// import topImage from "./Images/image114.png";
 import zest from "./Images/image 115.png";
 import star from "./Images/Star11.png";
 import warranty from "./Images/image 116.png";
-import { champions } from "../../champions";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import tick from "./Images/VectorTick.png";
+import { useParams } from "react-router";
+import axios from "axios";
 
 const Container = styled.div`
     height: 600px;
@@ -14,18 +14,28 @@ const Container = styled.div`
     left: 0px;
     background: linear-gradient(184.1deg, #292929 -0.53%, #010101 108.73%);
 
+    & .topImage {
+        display: flex;
+        margin-left: 7.54%;
+        margin-top: 0px;
+        width: 500px;
+        height: 500px;
+    }
+
     & .imageDiv {
-        position: absolute;
-        top: 184px;
-        left: 12.66%;
-        width: 350px;
-        height: 416px;
+        margin-top: 150px;
+        margin-left: 15px;
+        width: 283px;
+        height: 283px;
+        border-radius: 141.5px;
+        background: gray;
+        margin-left: 60px;
     }
 
     & .imageDiv img {
         width: 350px;
-        margin-top: -45px;
-        margin-left: -45px;
+        margin-left: -35px;
+        margin-top: -35px;
     }
 
     & .imageDiv img {
@@ -49,33 +59,21 @@ const Container = styled.div`
         }
     }
 
-    & .circle {
-        margin-top: 45px;
-        margin-left: 3.77%;
-        position: absolute;
-        width: 80%;
-        height: 283px;
-        border-radius: 150px;
-        background-color: gray;
-    }
-
     & .leftButton {
-        position: absolute;
         width: 0px;
         height: 0px;
-        left: 7.54%;
-        top: 357px;
+        margin-left: 0;
+        margin-top: 269px;
         border-top: 14px solid transparent;
         border-bottom: 14px solid transparent;
         border-right: 20px solid #ff0000;
     }
 
     & .rightButton {
-        position: absolute;
         width: 0px;
         height: 0px;
-        top: 357px;
-        left: 41.35%;
+        margin-top: 269px;
+        margin-left: 60px;
         border-left: 20px solid #ff0000;
         border-top: 14px solid transparent;
         border-bottom: 14px solid transparent;
@@ -86,7 +84,7 @@ const Container = styled.div`
         width: 36.81%;
         overflow-y: hidden;
         height: 49px;
-        left: 62.97%;
+        left: 60.97%;
         top: 177px;
         font-weight: 600;
         font-size: 40px;
@@ -96,9 +94,10 @@ const Container = styled.div`
 
     & .type {
         position: absolute;
-        width: 22.7%;
+        width: 35%;
+        overflow-y: hidden;
         height: 37px;
-        left: 62.97%;
+        left: 60.97%;
         top: 231px;
         font-weight: 600;
         font-size: 30px;
@@ -106,12 +105,16 @@ const Container = styled.div`
         color: #7c7c7c;
     }
 
-    & .price {
+    & .pricing {
         position: absolute;
-        width: 17.57%;
-        height: 49px;
-        left: 62.97%;
         top: 366px;
+        left: 60.97%;
+        display: flex;
+    }
+
+    & .price {
+        width: 150px;
+        height: 49px;
         font-weight: 600;
         font-size: 40px;
         line-height: 49px;
@@ -119,11 +122,10 @@ const Container = styled.div`
     }
 
     & .discountPrice {
-        position: absolute;
-        width: 11.01%;
+        width: 100px;
         height: 32px;
-        left: 79.93%;
-        top: 378px;
+        margin-left: 10px;
+        margin-top: 10px;
         font-size: 26px;
         line-height: 32px;
         text-decoration-line: line-through;
@@ -132,9 +134,9 @@ const Container = styled.div`
 
     & .save {
         position: absolute;
-        width: 12.21%;
+        width: 200px;
         height: 29px;
-        left: 62.97%;
+        left: 60.97%;
         top: 417px;
         font-size: 24px;
         line-height: 29px;
@@ -143,40 +145,57 @@ const Container = styled.div`
 
     & .tax {
         position: absolute;
-        width: 9.27%;
+        width: 250px;
         height: 20px;
-        left: 62.97%;
+        left: 60.97%;
         top: 448px;
         font-size: 16px;
         line-height: 20px;
         color: #b4b4b4;
     }
-
-    & .star {
+    & .starContainer {
         position: absolute;
         display: flex;
-        width: 7.54%;
-        left: 62.97%;
+        width: 300px;
+        left: 60.97%;
         top: 271px;
+    }
+    & .star {
+        display: flex;
+        width: 60px;
+    }
+
+     & .reviews {
+        width: 100px;
+        height: 12px;
+        margin-left: 10px;
+        top: 272px;
+        font-size: 10px;
+        line-height: 12px;
+        color: #9b9b9b;
+    }
+
+    & .zestContainer {
+        position: absolute;
+        top: 474px;
+        left: 60.97%;
+        display: flex;
     }
 
     & .internet {
-        position: absolute;
-        width: 23.45%;
+       
+        width: 300px;
         height: 20px;
-        left: 62.97%;
-        top: 474px;
+   
+       
         font-size: 16px;
         line-height: 20px;
         color: #b4b4b4;
     }
 
     & .zest {
-        position: absolute;
-        width: 5.12%;
+        width: 60px;
         height: 16px;
-        left: 85.21%;
-        top: 473px;
     }
 
     & .addToCart,
@@ -184,7 +203,7 @@ const Container = styled.div`
         position: absolute;
         width: 10.85%;
         height: 39px;
-        left: 62.97%;
+        left: 60.97%;
         top: 520px;
         border: 1px solid #ffffff;
         color: white;
@@ -196,7 +215,7 @@ const Container = styled.div`
     }
 
     & .buyItNow {
-        left: 75.41%;
+        left: 73.41%;
     }
 
     & .addToCart:hover,
@@ -205,20 +224,9 @@ const Container = styled.div`
         border: none;
     }
 
-    & .reviews {
-        position: absolute;
-        width: 3.92%;
-        height: 12px;
-        left: 67.87%;
-        top: 272px;
-        font-size: 10px;
-        line-height: 12px;
-        color: #9b9b9b;
-    }
-
     & .colorCircle {
         position: absolute;
-        left: 62.76%;
+        left: 60.76%;
         top: 305px;
         border-radius: 14px;
         box-sizing: border-box;
@@ -312,20 +320,47 @@ const Container = styled.div`
 `;
 
 export default function TopProductDisplay() {
-    const obj = {
+    const { productName } = useParams();
+
+    const temp = {
+        id: 50,
+        features: [
+            "Dual Connectivity Mode",
+            "Driverless 3D Spatial Sound",
+            "boAt Signature Music Mode",
+        ],
+        name: "boAt Immortal 1300",
+        category: "IMMORTAL GAMING",
         rating: 5,
-    };
-    let starsArray = [1, 2, 3, 4, 5];
-    starsArray.length = obj.rating; // 4
-    console.log(starsArray.length);
-    const [index, setIndex] = useState(0);
-    const e = champions[16];
-    const putComma = (n) => {
-        let str = String(n);
-        if (n.length < 4) return str;
-        return str[0] + "," + str[1] + str[2] + str[3];
+        reviews: 5,
+        original_price: 9990,
+        discount: 77,
+        isAvailable: true,
+
+        image: [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/IM1300_main_3_720x.png?v=1632893188",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/IM1300_main_2_720x.png?v=1632893182",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/IM1300_main_1_720x.png?v=1632893177",
+        ],
+        color: ["black", "red", "white"],
     };
 
+    const [e, setE] = useState(temp);
+
+    const getData = async () => {
+        const res = await axios.get("http://localhost:3002/products");
+        const temp = res.data;
+        const ele = temp.filter((el) => el.name === productName);
+        setE(ele[0]);
+    };
+
+    useEffect(() => {
+        getData();
+    }, []);
+
+    const starsArray = new Array(e.rating).fill(0);
+    const [index, setIndex] = useState(0);
+    console.log(e.rating);
     const changeImage = (k) => {
         if (index === 0 && k === -1) {
             setIndex(e.image.length - 1);
@@ -340,7 +375,7 @@ export default function TopProductDisplay() {
     };
     return (
         <Container>
-            <div>
+            <div className="topImage">
                 <div
                     className="leftButton"
                     onClick={() => changeImage(-1)}
@@ -358,14 +393,13 @@ export default function TopProductDisplay() {
             <div className="rigthSection">
                 <p className="name">{e.name}</p>
                 <p className="type">{e.category}</p>
-                <div className="star">
-                    {starsArray.map((el, i) => {
-                        return <img src={star} alt="star" />;
-                    })}
-                    {/* <img src={star} alt="star"/>
-                    <img src={star} alt="star"/>
-                    <img src={star} alt="star"/>
-                    <img src={star} alt="star"/> */}
+                <div className="starContainer">
+                    <div className="star">
+                        {starsArray.map((el, i) => {
+                            return <img src={star} alt="star" />;
+                        })}
+                    </div>
+                <p className="reviews">{e.reviews} Reviews</p>
                 </div>
                 <div className="colorCircle">
                     {e.color.map((el, i) => (
@@ -381,21 +415,23 @@ export default function TopProductDisplay() {
                         </div>
                     ))}
                 </div>
-                <p className="reviews">{e.reviews}  Reviews</p>
-                <p className="price">₹{putComma(e.original_price)}.00</p>
-                <p className="discountPrice">
-                    ₹
-                    {putComma(
-                        Math.floor((e.original_price / 100) * e.discount)
-                    )}
-                    .00
-                </p>
+                <div className="pricing">
+                    <p className="price">
+                        ₹{Math.floor((e.original_price / 100) * e.discount)}.00
+                    </p>
+                    <p className="discountPrice">
+                        ₹{e.original_price}
+                        .00
+                    </p>
+                </div>
                 <p className="save">You save {e.discount}%</p>
                 <p className="tax">Inclusive all Tax</p>
-                <p className="internet">
-                    Or a internet free payment of 1160 with{" "}
-                </p>
-                <img className="zest" src={zest} alt="zest" />
+                <div className="zestContainer">
+                    <p className="internet">
+                        Or a internet free payment of 1160 with{" "}
+                    </p>
+                    <img className="zest" src={zest} alt="zest" />
+                </div>
                 <button className="addToCart">ADD TO CART</button>
                 <button className="buyItNow">BUY IT NOW</button>
             </div>

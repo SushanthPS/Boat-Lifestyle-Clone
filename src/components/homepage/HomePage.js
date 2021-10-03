@@ -2,8 +2,12 @@ import { ImageSlider } from "./ImageSlider";
 import { Video } from "./Video";
 import { ImageSlider2 } from "./ImageSlider2";
 import { Blog } from "./blog/Blog";
+import { useLayoutEffect } from "react";
 
 export const HomePage = () => {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+    });
     return (
         <>
             <ImageSlider />

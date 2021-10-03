@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 const Container = styled.div`
     height: 525px;
@@ -151,6 +153,37 @@ const Form = styled.form`
 `;
 
 export function Login() {
+    const [data, setData] = useState([]);
+    const [email, setEmail] = useState("");
+    const [pass, setPass] = useState("");
+    const [flag, setFlag] = useState(false);
+
+    const getData = async () => {
+        const res = await axios.get("http://localhost:3002/users");
+        setData(res.data);
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        let cred = false;
+        for (let i = 0; i < data.length; i++) {
+            if (data[i].email === email && data[i].password === pass) {
+                cred = true;
+                break;
+            }
+        }
+        if (cred) {
+            setFlag(true);
+        } else {
+            setFlag(false);
+            alert("Incorrect email or password");
+        }
+    };
+
+    useEffect(() => {
+        getData();
+    }, []);
+
     return (
         <Container>
             <div className="cont">
@@ -158,7 +191,7 @@ export function Login() {
                     <div className="heading">
                         <h2>Login</h2>
                     </div>
-                    <Form>
+                    <Form onSubmit={handleSubmit}>
                         <div className="socials">
                             <iframe
                                 id="social_login_frame"
@@ -169,12 +202,22 @@ export function Login() {
                         </div>
                         <div className="login-email">
                             <label htmlFor="customer_email">Email</label>
-                            <input type="email" id="customer_email" />
+                            <input
+                                onChange={(e) => setEmail(e.target.value)}
+                                type="email"
+                                id="customer_email"
+                            />
                         </div>
                         <div className="login-password">
                             <label htmlFor="customer_password">Password</label>
                             <div className="text-over-input">
-                                <input type="password" id="customer_password" />
+                                <input
+                                    onChange={(e) => {
+                                        setPass(e.target.value);
+                                    }}
+                                    type="password"
+                                    id="customer_password"
+                                />
                                 <div className="forgot-password">
                                     Forgot your password?
                                 </div>
@@ -193,6 +236,7 @@ export function Login() {
                             </Link>
                         </div>
                     </Form>
+                    {flag ? <Redirect to="/cart" /> : ""}
                 </div>
             </div>
         </Container>

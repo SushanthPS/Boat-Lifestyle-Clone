@@ -1,7 +1,8 @@
 import styled from "styled-components";
-import { champions } from "../champions";
 import { ProductCard } from "./ProductCard";
 import { Chatbot } from "./Chatbot";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 const Container = styled.div`
     margin-left: auto;
@@ -103,7 +104,7 @@ const Container = styled.div`
         margin-bottom: 3rem;
     }
 
-    .data-cont > h2 {
+    .data-cont > .sort > h2 {
         font-weight: 600;
         font-size: 30px;
         line-height: 1.2em;
@@ -117,9 +118,86 @@ const Container = styled.div`
         margin-top: 30px;
         row-gap: 70px;
     }
+
+    .sort {
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: space-between;
+        width: 94%;
+        margin: auto;
+
+        label {
+            padding-right: 10px;
+            font-size: 12px;
+            color: #8b8b8b;
+            text-transform: uppercase;
+        }
+
+        option {
+            font-weight: normal;
+            display: block;
+            white-space: nowrap;
+            min-height: 1.2em;
+            padding: 0px 2px 1px;
+            background-color: #ff0000c5;
+            text-align: center;
+            transition: opacity 5ms;
+            border: none;
+        }
+
+        select {
+            display: inline-block;
+            vertical-align: middle;
+            margin: -18px 0 -16px 0.5em;
+            font-size: 16px;
+            letter-spacing: 0;
+            background-color: transparent;
+            color: white;
+            border: none;
+        }
+    }
 `;
 
 export function Champions() {
+    const [data, setData] = useState([]);
+
+    const getData = async () => {
+        const res = await axios.get("http://localhost:3002/champions");
+        setData(res.data);
+    };
+
+    const handleChange = (e) => {
+        const { value } = e.target;
+        let temp = [...data];
+
+        if (value === "manual") temp.sort((a, b) => a.id - b.id);
+        else if (value === "price-ascending")
+            temp.sort((a, b) => {
+                return (
+                    a.original_price -
+                    Math.floor((a.original_price * a.discount) / 100) -
+                    (b.original_price -
+                        Math.floor((b.original_price * b.discount) / 100))
+                );
+            });
+        else
+            temp.sort((a, b) => {
+                return (
+                    b.original_price -
+                    Math.floor((b.original_price * b.discount) / 100) -
+                    (a.original_price -
+                        Math.floor((a.original_price * a.discount) / 100))
+                );
+            });
+
+        setData(temp);
+    };
+
+    useEffect(() => {
+        getData();
+    }, []);
+
     return (
         <Container>
             <Chatbot />
@@ -166,10 +244,26 @@ export function Champions() {
                 </div>
             </div>
             <div className="data-cont">
-                <h2>Sound of Champions</h2>
+                <div className="sort">
+                    <h2>Sound of Champions</h2>
+                    <span>
+                        <label>Sort by</label>
+                        <span>
+                            <select onChange={handleChange}>
+                                <option value="manual">Featured</option>
+                                <option value="price-ascending">
+                                    Price, low to high
+                                </option>
+                                <option value="price-descending">
+                                    Price, high to low
+                                </option>
+                            </select>
+                        </span>
+                    </span>
+                </div>
                 <div className="data-grid">
-                    {champions.map((el) => (
-                        <ProductCard el={el}></ProductCard>
+                    {data.map((el) => (
+                        <ProductCard key={el._id} el={el}></ProductCard>
                     ))}
                 </div>
             </div>

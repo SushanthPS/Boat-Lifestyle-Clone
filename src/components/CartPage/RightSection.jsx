@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import product from './Images/image 66.png';
+import product from "./Images/image 66.png";
 
 const Container = styled.div`
-   position: absolute;
-   width: 50%;
-   left: 50%;
+    position: absolute;
+    width: 50%;
+    left: 50%;
     height: 1472px;
     top: 86px;
     background: #e5e5e5;
@@ -12,7 +12,7 @@ const Container = styled.div`
 
 const ProductDisplay = styled.div`
     margin-top: 140px;
-    &>div {
+    & > div {
         display: flex;
         margin-left: 22px;
         width: 90%;
@@ -87,13 +87,13 @@ const ProductDisplay = styled.div`
         color: #222222;
     }
 
-    & .pay>p {
+    & .pay > p {
         font-weight: 500;
         font-size: 12px;
         line-height: 15px;
-        color: #FF0000;
-           margin-left: 150px;
-           margin-top: 5px;
+        color: #ff0000;
+        margin-left: 150px;
+        margin-top: 5px;
     }
 
     & .circle {
@@ -106,9 +106,9 @@ const ProductDisplay = styled.div`
         font-weight: 500;
         font-size: 16px;
         line-height: 20px;
-        color: #FAFAFA;
+        color: #fafafa;
         text-align: center;
-        padding-top: 5px;
+        padding-top: 2px;
     }
 `;
 
@@ -122,7 +122,7 @@ const Total = styled.div`
         font-size: 16px;
         width: 315px;
         height: 48px;
-        background: #FFFFFF;
+        background: #ffffff;
         border: 0.5px solid #000000;
         box-sizing: border-box;
         border-radius: 4px;
@@ -171,7 +171,6 @@ const Total = styled.div`
     }
 `;
 
-
 const Code = styled.div`
     width: 92%;
     margin-left: 5%;
@@ -193,7 +192,7 @@ export default function RightSection() {
         <Container>
             <ProductDisplay>
                 <div>
-                    <img src={product} alt="product"/>
+                    <img src={product} alt="product" />
                     <div className="circle">1</div>
                     <div className="title">
                         <h2>Stone 1200</h2>
@@ -214,7 +213,10 @@ export default function RightSection() {
             </ProductDisplay>
             <Total>
                 <div className="coupon">
-                    <input name="coupon" placeholder="Gift card or Discount Code" />
+                    <input
+                        name="coupon"
+                        placeholder="Gift card or Discount Code"
+                    />
                     <button>Apply</button>
                 </div>
                 <div className="cont">
@@ -229,12 +231,16 @@ export default function RightSection() {
                 </div>
                 <div className="bill">
                     <p className="light">Total</p>
-                    <p className="dark" style={{marginRight: "5%"}}>₹ 13,990.00</p>
+                    <p className="dark" style={{ marginRight: "5%" }}>
+                        ₹ 13,990.00
+                    </p>
                 </div>
             </Total>
             <Code>
-                <p>Apply code PRO150 & get Flat Rs.150 off on your favourite 
-Products!</p>
+                <p>
+                    Apply code PRO150 & get Flat Rs.150 off on your favourite
+                    Products!
+                </p>
             </Code>
         </Container>
     );

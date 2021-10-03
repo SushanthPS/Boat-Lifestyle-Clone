@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import img1 from "../assets/img1.png";
-import img2 from "../assets/img2.png";
+import { Link } from "react-router-dom";
 
 const CardContainer = styled.div`
     width: 400px;
@@ -132,49 +131,53 @@ const CardShopNowButton = styled.button`
 
 export const ProductCard = ({ el }) => {
     const imageFlag = el.image.length > 1 ? true : false;
-    console.log(el.image[1]);
+
     return (
-        <CardContainer>
-            <InnerImgContainer>
-                <img src={el.image[0]} alt="img" />
-                {imageFlag ? <img src={el.image[1]} alt="img" /> : true}
-            </InnerImgContainer>
-            <CardData>
-                <p className="product-title">{el.name}</p>
-                <p className="product-price">
-                    Rs.
-                    {(
-                        el.original_price -
-                        Math.floor((el.original_price * el.discount) / 100)
-                    ).toFixed(2)}
-                </p>
-                <span className="product-original-price">
-                    Rs.{el.original_price.toFixed(2)}
-                </span>
-                <ul className="product-features">
-                    <li>{el.features[0]}</li>
-                    <li>{el.features[1]}</li>
-                    <li>{el.features[2]}</li>
-                </ul>
-                <svg
-                    className="star-icon"
-                    width="10"
-                    height="10"
-                    viewBox="0 0 10 10"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        d="M5 0L6.12257 3.45492H9.75528L6.81636 5.59017L7.93893 9.04508L5 6.90983L2.06107 9.04508L3.18364 5.59017L0.244718 3.45492H3.87743L5 0Z"
-                        fill="#FF0000"
-                    />
-                </svg>
-                <span className="product-rating">{el.rating.toFixed(1)}</span>
-                <CardShopNowButton>
-                    <span>Shop Now</span>
-                </CardShopNowButton>
-            </CardData>
-        </CardContainer>
+        <Link to={`/products/${el.name}`}>
+            <CardContainer>
+                <InnerImgContainer>
+                    <img src={el.image[0]} alt="img" />
+                    {imageFlag ? <img src={el.image[1]} alt="img" /> : true}
+                </InnerImgContainer>
+                <CardData>
+                    <p className="product-title">{el.name}</p>
+                    <p className="product-price">
+                        Rs.
+                        {(
+                            el.original_price -
+                            Math.floor((el.original_price * el.discount) / 100)
+                        ).toFixed(2)}
+                    </p>
+                    <span className="product-original-price">
+                        Rs.{el.original_price.toFixed(2)}
+                    </span>
+                    <ul className="product-features">
+                        <li>{el.features[0]}</li>
+                        <li>{el.features[1]}</li>
+                        <li>{el.features[2]}</li>
+                    </ul>
+                    <svg
+                        className="star-icon"
+                        width="10"
+                        height="10"
+                        viewBox="0 0 10 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M5 0L6.12257 3.45492H9.75528L6.81636 5.59017L7.93893 9.04508L5 6.90983L2.06107 9.04508L3.18364 5.59017L0.244718 3.45492H3.87743L5 0Z"
+                            fill="#FF0000"
+                        />
+                    </svg>
+                    <span className="product-rating">
+                        {el.rating.toFixed(1)}
+                    </span>
+                    <CardShopNowButton>
+                        <span>Buy Now</span>
+                    </CardShopNowButton>
+                </CardData>
+            </CardContainer>
+        </Link>
     );
 };
 

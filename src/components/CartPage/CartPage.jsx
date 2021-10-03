@@ -5,7 +5,7 @@ export default function CartPage() {
     return (
         <>
             <LeftSection />
-            <RightSection/>
+            <RightSection />
         </>
     );
 }
