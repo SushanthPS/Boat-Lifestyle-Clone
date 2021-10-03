@@ -39,9 +39,9 @@ const Container = styled.div`
         box-shadow: inset 0px -1px 0px 0px red;
     }
 
-    span:hover,
-    span:active,
-    span:focus {
+    .category > span:hover,
+    .category > span:active,
+    .category > span:focus {
         background-color: white;
         color: red;
         box-shadow: inset 0px -1px 0px 0px red;

@@ -124,7 +124,7 @@ const Form = styled.form`
     .action-bottom > span > a:hover {
         text-decoration: underline;
         cursor: pointer;
-        color: #01a2e1;
+        color: red;
         text-decoration: underline;
         background-color: transparent;
         transition: color 0.1s, border-color 0.1s;
