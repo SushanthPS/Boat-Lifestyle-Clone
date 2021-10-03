@@ -8,12 +8,17 @@ import Faq from "./Faq";
 import Reviews from "./Reviews";
 import WriteReviews from "./WriteReviews";
 import styled from "styled-components";
+import { useLayoutEffect } from "react";
 
 const ProductContainer = styled.div`
     margin-bottom: 4470px;
 `;
 
 export default function ProductPage() {
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+    });
+
     return (
         <ProductContainer>
             <TopProductDisplay />
