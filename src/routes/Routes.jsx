@@ -6,6 +6,7 @@ import { Login } from "../components/Login";
 import { Register } from "../components/Register";
 import { Footer } from "../components/Footer";
 import ProductPage from "../components/ProductPage/ProductPage";
+import { Collections } from "../components/Collections";
 
 export function Routes() {
     return (
@@ -32,6 +33,11 @@ export function Routes() {
 
             <Route path="/products/:productName">
                 <ProductPage />
+            </Route>
+
+            <Route path="/collections/:collectionName">
+                <Collections />
+                <Footer />
             </Route>
 
             <Route>

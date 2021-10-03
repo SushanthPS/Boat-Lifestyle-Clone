@@ -3,9 +3,10 @@ import styled from "styled-components";
 import zest from "./Images/image 115.png";
 import star from "./Images/Star11.png";
 import warranty from "./Images/image 116.png";
-import { champions } from "../../champions";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import tick from "./Images/VectorTick.png";
+import { useParams } from "react-router";
+import axios from "axios";
 
 const Container = styled.div`
     height: 95.38vh;
@@ -312,19 +313,47 @@ const Container = styled.div`
 `;
 
 export default function TopProductDisplay() {
-    const obj = {
+    const { productName } = useParams();
+
+    const temp = {
+        id: 50,
+        features: [
+            "Dual Connectivity Mode",
+            "Driverless 3D Spatial Sound",
+            "boAt Signature Music Mode",
+        ],
+        name: "boAt Immortal 1300",
+        category: "IMMORTAL GAMING",
         rating: 5,
+        reviews: 5,
+        original_price: 9990,
+        discount: 77,
+        isAvailable: true,
+
+        image: [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/IM1300_main_3_720x.png?v=1632893188",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/IM1300_main_2_720x.png?v=1632893182",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/IM1300_main_1_720x.png?v=1632893177",
+        ],
+        color: ["black", "red", "white"],
     };
+
+    const [e, setE] = useState(temp);
+
+    const getData = async () => {
+        const res = await axios.get("http://localhost:3002/products");
+        const temp = res.data;
+        const ele = temp.filter((el) => el.name === productName);
+        setE(ele[0]);
+    };
+
+    useEffect(() => {
+        getData();
+    }, []);
+
     let starsArray = [1, 2, 3, 4, 5];
-    starsArray.length = obj.rating; // 4
-    console.log(starsArray.length);
+    starsArray.length = e.rating; // 4
     const [index, setIndex] = useState(0);
-    const e = champions[16];
-    const putComma = (n) => {
-        let str = String(n);
-        if (n.length < 4) return str;
-        return str[0] + "," + str[1] + str[2] + str[3];
-    };
 
     const changeImage = (k) => {
         if (index === 0 && k === -1) {
@@ -382,12 +411,11 @@ export default function TopProductDisplay() {
                     ))}
                 </div>
                 <p className="reviews">{e.reviews}</p>
-                <p className="price">₹{putComma(e.original_price)}.00</p>
+                <p className="price">
+                    ₹{Math.floor((e.original_price / 100) * e.discount)}.00
+                </p>
                 <p className="discountPrice">
-                    ₹
-                    {putComma(
-                        Math.floor((e.original_price / 100) * e.discount)
-                    )}
+                    ₹{e.original_price}
                     .00
                 </p>
                 <p className="save">You save {e.discount}%</p>

@@ -21,7 +21,7 @@ const collectionOptinArray = [
         alt: "smart-watches",
     },
     {
-        routeLink: "/collections/wired-headphones",
+        routeLink: "/collections/wired-earphones",
         coverImgUrl:
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/files/category_03_720x.png?v=1602142415",
         alt: "wired-headphones",
