@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import axios from "axios";
@@ -17,7 +17,7 @@ const Container = styled.div`
         margin-bottom: 3rem;
     }
 
-    .data-cont > h2 {
+    .data-cont > .sort > h2 {
         font-weight: 600;
         font-size: 30px;
         line-height: 1.2em;
@@ -32,11 +32,54 @@ const Container = styled.div`
         row-gap: 70px;
         height: 100%;
     }
+
+    .sort {
+        display: flex;
+        color: white;
+        align-items: center;
+        justify-content: space-between;
+        width: 94%;
+        margin: auto;
+
+        label {
+            padding-right: 10px;
+            font-size: 12px;
+            color: #8b8b8b;
+            text-transform: uppercase;
+        }
+
+        option {
+            font-weight: normal;
+            display: block;
+            white-space: nowrap;
+            min-height: 1.2em;
+            padding: 0px 2px 1px;
+            background-color: #ff0000c5;
+            text-align: center;
+            transition: opacity 5ms;
+            border: none;
+        }
+
+        select {
+            display: inline-block;
+            vertical-align: middle;
+            margin: -18px 0 -16px 0.5em;
+            font-size: 16px;
+            letter-spacing: 0;
+            background-color: transparent;
+            color: white;
+            border: none;
+        }
+    }
 `;
 
 export function Collections() {
     const [data, setData] = useState([]);
     const { collectionName } = useParams();
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+    });
 
     const getCategory = (cname) => {
         let ans;
@@ -104,6 +147,33 @@ export function Collections() {
         setData(temp);
     };
 
+    const handleChange = (e) => {
+        const { value } = e.target;
+        let temp = [...data];
+
+        if (value === "manual") temp.sort((a, b) => a.id - b.id);
+        else if (value === "price-ascending")
+            temp.sort((a, b) => {
+                return (
+                    a.original_price -
+                    Math.floor((a.original_price * a.discount) / 100) -
+                    (b.original_price -
+                        Math.floor((b.original_price * b.discount) / 100))
+                );
+            });
+        else
+            temp.sort((a, b) => {
+                return (
+                    b.original_price -
+                    Math.floor((b.original_price * b.discount) / 100) -
+                    (a.original_price -
+                        Math.floor((a.original_price * a.discount) / 100))
+                );
+            });
+
+        setData(temp);
+    };
+
     useEffect(() => {
         getData();
     }, [collectionName]);
@@ -111,7 +181,24 @@ export function Collections() {
     return (
         <Container>
             <div className="data-cont">
-                <h2>{title}</h2>
+                <div className="sort">
+                    <h2>{title}</h2>
+                    <span>
+                        <label>Sort by</label>
+                        <span>
+                            <select onChange={handleChange}>
+                                <option value="manual">Featured</option>
+                                <option value="price-ascending">
+                                    Price, low to high
+                                </option>
+                                <option value="price-descending">
+                                    Price, high to low
+                                </option>
+                            </select>
+                        </span>
+                    </span>
+                </div>
+
                 <div className="data-grid">
                     {data.map((el) => (
                         <ProductCard el={el}></ProductCard>
