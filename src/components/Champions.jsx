@@ -1,7 +1,8 @@
 import styled from "styled-components";
-import { champions } from "../champions";
 import { ProductCard } from "./ProductCard";
 import { Chatbot } from "./Chatbot";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 const Container = styled.div`
     margin-left: auto;
@@ -120,6 +121,17 @@ const Container = styled.div`
 `;
 
 export function Champions() {
+    const [data, setData] = useState([]);
+
+    const getData = async () => {
+        const res = await axios.get("http://localhost:3002/champions");
+        setData(res.data);
+    };
+
+    useEffect(() => {
+        getData();
+    }, []);
+
     return (
         <Container>
             <Chatbot />
@@ -168,7 +180,7 @@ export function Champions() {
             <div className="data-cont">
                 <h2>Sound of Champions</h2>
                 <div className="data-grid">
-                    {champions.map((el) => (
+                    {data.map((el) => (
                         <ProductCard el={el}></ProductCard>
                     ))}
                 </div>

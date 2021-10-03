@@ -5,6 +5,7 @@ import { Champions } from "../components/Champions";
 import { Login } from "../components/Login";
 import { Register } from "../components/Register";
 import { Footer } from "../components/Footer";
+import ProductPage from "../components/ProductPage/ProductPage";
 
 export function Routes() {
     return (
@@ -27,6 +28,10 @@ export function Routes() {
             <Route path="/account/register">
                 <Register />
                 <Footer />
+            </Route>
+
+            <Route path="/products/:productName">
+                <ProductPage />
             </Route>
 
             <Route>
