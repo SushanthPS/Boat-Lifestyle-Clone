@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { useHistory } from "react-router";
 
 // importing Custom sub-Components
 import { Collection, SearchResults } from "./NavHover";
@@ -11,6 +12,7 @@ import searchIcon from "../../assets/search-icon.svg";
 import couponIcon from "../../assets/coupon-icon.svg";
 import avatarIcon from "../../assets/avatar-icon.svg";
 import cartIcon from "../../assets/cart-icon.svg";
+import { useEffect, useState } from "react";
 
 const NavbarContainre = styled.div`
     position: fixed;
@@ -38,9 +40,14 @@ const NavbarContainre = styled.div`
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         > span:nth-child(1) {
             font-weight: 500;
             font-size: 16px;
+        }
+
+        > span:nth-child(3) {
+            color: ${(props) => (props.flag ? "red" : "inherit")};
         }
 
         img {
@@ -151,9 +158,20 @@ const NavbarSpaceHolder = styled.div`
 `;
 
 export const Navbar = () => {
+    const [flag, setFlag] = useState(false);
+    const temp = useHistory();
+
+    useEffect(() => {
+        if (temp.location.pathname === "/pages/sound-of-champions") {
+            setFlag(true);
+        } else {
+            setFlag(false);
+        }
+    }, [temp.location.pathname]);
+
     return (
         <>
-            <NavbarContainre>
+            <NavbarContainre flag={flag}>
                 <div className="boat-logo">
                     <Link to="/">
                         <img src={logo} alt="Logo" />

@@ -3,6 +3,7 @@ import { ProductCard } from "./ProductCard";
 import { Chatbot } from "./Chatbot";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { useHistory } from "react-router";
 
 const Container = styled.div`
     margin-left: auto;
@@ -123,6 +124,9 @@ const Container = styled.div`
 export function Champions() {
     const [data, setData] = useState([]);
 
+    const temp = useHistory();
+    console.log(temp.location.pathname);
+
     const getData = async () => {
         const res = await axios.get("http://localhost:3002/champions");
         setData(res.data);
@@ -179,6 +183,7 @@ export function Champions() {
             </div>
             <div className="data-cont">
                 <h2>Sound of Champions</h2>
+
                 <div className="data-grid">
                     {data.map((el) => (
                         <ProductCard el={el}></ProductCard>
