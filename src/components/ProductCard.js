@@ -132,7 +132,7 @@ const CardShopNowButton = styled.button`
 
 export const ProductCard = ({ el }) => {
     const imageFlag = el.image.length > 1 ? true : false;
-    console.log(el.image[1]);
+
     return (
         <CardContainer>
             <InnerImgContainer>

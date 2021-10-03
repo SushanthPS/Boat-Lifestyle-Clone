@@ -1109,7 +1109,7 @@
             "Powered by 10mm Dynamic Drivers"
         ],
         "name": "TRebel BassHeads 100",
-        "category": "WIRED",
+        "category": "WIRED EARPHONES",
         "rating": 4,
         "reviews": 5,
         "original_price": 399,
@@ -1131,7 +1131,7 @@
             "An Absolute Experience"
         ],
         "name": "Boat BassHeads 105",
-        "category": "WIRED",
+        "category": "WIRED EARPHONES",
         "rating": 5,
         "reviews": 26,
         "original_price": 349,
@@ -1154,7 +1154,7 @@
             "Hands-free communication In-line mic"
         ],
         "name": "BOAT BassHeads 104",
-        "category": "WIRED",
+        "category": "WIRED EARPHONES",
         "rating": 4,
         "reviews": 19,
         "original_price": 399,
@@ -1176,7 +1176,7 @@
             "Equipped With 3.5 mm Jack"
         ],
         "name": "BOAT BassHeads 242",
-        "category": "WIRED",
+        "category": "WIRED EARPHONES",
         "rating": 4,
         "reviews": 260,
         "original_price": 399,
@@ -1198,7 +1198,7 @@
             "IPX 4 Water Resistant Ear-buds"
         ],
         "name": "Boat BassHeads 103",
-        "category": "WIRED",
+        "category": "WIRED EARPHONES",
         "rating": 4,
         "reviews": 343,
         "original_price": 349,
@@ -1220,7 +1220,7 @@
             "Powered by 8mm Dynamic Drivers"
         ],
         "name": "BassHeads 102",
-        "category": "WIRED",
+        "category": "WIRED EARPHONES",
         "rating": 4,
         "reviews": 125,
         "original_price": 349,
@@ -1242,7 +1242,7 @@
             "Equipped with 3.5mm angled jack"
         ],
         "name": "Boat BassHeads 152",
-        "category": "WIRED",
+        "category": "WIRED EARPHONES",
         "rating": 5,
         "reviews": 59,
         "original_price": 399,
@@ -2283,5 +2283,27 @@
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/stone-260-csk-yellow-1_720x.png?v=1613457242"
         ],
         "color": ["yellow"]
+    },
+    {
+        "id": 26,
+        "features": [
+            "Lightweight Secure Fit Design",
+            "Immersive Audio",
+            "An Absolute Experience"
+        ],
+        "name": "BOAT BassHeads 103‌",
+        "category": "WIRED EARPHONES",
+        "rating": 5,
+        "reviews": 343,
+        "original_price": 1290,
+        "discount": 69,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103b_720x.png?v=1613457250",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103_720x.png?v=1613742737",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103blk_720x.png?v=1613457250"
+        ],
+        "color": ["blue", "red", "black"]
     }
 ]
