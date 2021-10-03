@@ -1,0 +1,746 @@
+[
+    {
+        "id": 1,
+        "features": [
+            "Signature Sound",
+            "Power Packed Playback",
+            "Light As A Feather"
+        ],
+        "name": "BOAT Airdopes 131 CSK Edition",
+        "category": "LIMITED EDITION",
+        "rating": 2,
+        "reviews": 1,
+        "original_price": 2990,
+        "discount": 56,
+        "isAvailable": true,
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_9f81fab2-b6e1-4522-9f14-5143f5c48fd6_720x.png?v=1617782793"
+        ],
+        "color": ["blue"]
+    },
+    {
+        "id": 2,
+        "features": [
+            "Ergonomic & Comfortable Design",
+            "BOAT Signature Sound",
+            "Powered By Qualcomm "
+        ],
+        "name": "BOAT Rockerz 255 KKR Edition",
+        "category": "LIMITED EDITION",
+        "rating": 5,
+        "reviews": 2,
+        "original_price": 2990,
+        "discount": 56,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/a94ee4f6-571a-4b6d-afed-6656650f48f9_720x.png?v=1625046509"
+        ],
+        "color": ["purple"]
+    },
+    {
+        "id": 3,
+        "features": [
+            "IPX7 Water And Sweat Resistance",
+            "Unstoppable Battery",
+            "Stay Hooked Without Interruptions"
+        ],
+        "name": "BOAT Airdopes 441 DC Edition",
+        "category": "LIMITED EDITION",
+        "rating": 5,
+        "reviews": 1,
+        "original_price": 5999,
+        "discount": 58,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/70e65518-99d2-4778-8deb-a7c3d47bc084_720x.png?v=1625046148"
+        ],
+        "color": ["blue"]
+    },
+    {
+        "id": 4,
+        "features": [
+            "Up to 8 Hours Nonstop Playback",
+            "Premium HD Audio",
+            "Limited Edition Series"
+        ],
+        "name": "Rockerz 600 Mumbai Indians Edition",
+        "category": "LIMITED EDITION",
+        "rating": 5,
+        "reviews": 4,
+        "original_price": 4990,
+        "discount": 40,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/b94b60dc-e38c-4b3d-985f-2753a4810ea0_720x.png?v=1623813147"
+        ],
+        "color": ["blue"]
+    },
+    {
+        "id": 5,
+        "features": [
+            "Super Extra Bass",
+            "Premium audio with 10mm drivers",
+            "Equipped with 3.5mm angled jack"
+        ],
+        "name": "BOAT BassHeads 152 KKR Edition",
+        "category": "LIMITED EDITION",
+        "rating": 5,
+        "reviews": 20,
+        "original_price": 1290,
+        "discount": 61,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/a8672be5-2481-4a9f-8f5d-9bda91871efe_720x.png?v=1625046389"
+        ],
+        "color": ["purple"]
+    },
+    {
+        "id": 6,
+        "features": ["Non-stop playback ", "Signature Sound", "Featherweight "],
+        "name": "BOAT Airdopes 131 MI Edition",
+        "category": "LIMITED EDITION",
+        "rating": 3,
+        "reviews": 15,
+        "original_price": 2990,
+        "discount": 56,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_330e678b-0d80-4cbc-8fc9-e14a890d46cf_720x.png?v=1617786643"
+        ],
+        "color": ["blue"]
+    },
+    {
+        "id": 7,
+        "features": [
+            "IPX7 Sweat & Water Resistance",
+            "5 hours of playtime",
+            "500mAh battery"
+        ],
+        "name": "BOAT Airdopes 441 KKR Edition",
+        "category": "LIMITED EDITION",
+        "rating": 4,
+        "reviews": 18,
+        "original_price": 5999,
+        "discount": 58,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/acbd8a8a-4657-4897-b37c-217dbd1c51c2_720x.png?v=1623813141"
+        ],
+        "color": ["yellow"]
+    },
+    {
+        "id": 8,
+        "features": [
+            "Up to 8H Nonstop Playback",
+            "Captivating HD Sound",
+            "Faux Leather Headphones "
+        ],
+        "name": "BOAT Rockerz 600 KKR Edition",
+        "category": "LIMITED EDITION",
+        "rating": 5,
+        "reviews": 2,
+        "original_price": 4990,
+        "discount": 49,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/0ba417d2-bcb7-49a7-884b-14de7db0fb58_720x.png?v=1625046262"
+        ],
+        "color": ["purple"]
+    },
+    {
+        "id": 9,
+        "features": [
+            "Light On Ears, Heavy On Performance",
+            "BOAT Signature Sound",
+            "12 hours of overall playback"
+        ],
+        "name": "BOAT Airdopes 131 KKR Edition",
+        "category": "LIMITED EDITION",
+        "rating": 5,
+        "reviews": 3,
+        "original_price": 2990,
+        "discount": 56,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/2b93db1f-bb85-4e41-9722-b7e53f1c3164_720x.png?v=1625046272"
+        ],
+        "color": ["purple"]
+    },
+    {
+        "id": 10,
+        "features": [
+            "Ergonomic fit",
+            "BOAT Signature Sound",
+            "Powered By Qualcomm"
+        ],
+        "name": "BOAT Rockerz 255 CSK Edition",
+        "category": "LIMITED EDITION",
+        "rating": 5,
+        "reviews": 5,
+        "original_price": 2990,
+        "discount": 56,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/7937b869-69ac-4e7e-81c4-c499fcd7bb4a_720x.png?v=1625045162"
+        ],
+        "color": ["blue"]
+    },
+    {
+        "id": 11,
+        "features": [
+            "IPX7 Water And Sweat Resistance",
+            "5 hours of playtime",
+            "500mAh charging "
+        ],
+        "name": "BOAT Airdopes 441 RCB Edition",
+        "category": "LIMITED EDITION",
+        "rating": 3,
+        "reviews": 1,
+        "original_price": 5999,
+        "discount": 58,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/43eb12be-6e8f-4c98-a3a7-f1df3492b919_720x.png?v=1625046593"
+        ],
+        "color": ["black"]
+    },
+    {
+        "id": 12,
+        "features": [
+            "Ergonomic & Comfortable Design",
+            "BOAT Signature Sound",
+            "Powered By Qualcomm"
+        ],
+        "name": "BOAT Rockerz 255 DC Edition",
+        "category": "LIMITED EDITION",
+        "rating": 3,
+        "reviews": 1,
+        "original_price": 2990,
+        "discount": 56,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/44d7e1e9-e748-4eba-b3a4-6e49aeec8505_720x.png?v=1625045894"
+        ],
+        "color": ["blue"]
+    },
+    {
+        "id": 13,
+        "features": [
+            "Resistant To Sweat And Obstacles",
+            "BOAT Signature Sound",
+            "500 mAh battery"
+        ],
+        "name": "BOAT Airdopes 441 CSK Edition",
+        "category": "LIMITED EDITION",
+        "rating": 5,
+        "reviews": 1,
+        "original_price": 5999,
+        "discount": 58,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/ca8fe948-afa5-4185-9f1a-7a682c643da0_720x.png?v=1625045893"
+        ],
+        "color": ["yellow"]
+    },
+    {
+        "id": 14,
+        "features": [
+            "Super Extra Bass",
+            "8 Hours Nonstop Playback",
+            "Lightweight and Portable"
+        ],
+        "name": "BOAT Rockerz 400 KXIP Edition",
+        "category": "LIMITED EDITION",
+        "rating": 5,
+        "reviews": 1,
+        "original_price": 3990,
+        "discount": 50,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/a4811849-6afc-47c8-95a6-022d1e37eb7d_720x.png?v=1625045653"
+        ],
+        "color": ["red"]
+    },
+    {
+        "id": 15,
+        "features": [
+            "IPX7 Sweat & Water Resistance",
+            "500mAh carry cum charging case ",
+            " 5 hours of playtime per charge "
+        ],
+        "name": "BOAT Airdopes 441 MI Edition",
+        "category": "LIMITED EDITION",
+        "rating": 4,
+        "reviews": 1,
+        "original_price": 5999,
+        "discount": 58,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/d740bfe0-326b-42d5-8b42-a24e738e2032_720x.png?v=1625045294"
+        ],
+        "color": ["black"]
+    },
+    {
+        "id": 16,
+        "features": [
+            "Lightweight & Dynamic",
+            "BOAT Signature Sound",
+            " 12 hours of playback time "
+        ],
+        "name": "BOAT‌ ‌Airdopes 131‌ DC Edition‌",
+        "category": "LIMITED EDITION",
+        "rating": 4,
+        "reviews": 3,
+        "original_price": 2990,
+        "discount": 56,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/0642669c-5c9c-401b-8964-e79f2dad8520_720x.png?v=1625046137"
+        ],
+        "color": ["blue"]
+    },
+    {
+        "id": 17,
+        "features": [
+            "Super Extra Bass",
+            "8 Hours Nonstop Playback",
+            "Lightweight and Portable"
+        ],
+        "name": "BOAT Rockerz 400 MI Edition",
+        "category": "LIMITED EDITION",
+        "rating": 5,
+        "reviews": 6,
+        "original_price": 3990,
+        "discount": 50,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/4dddedb8-f8bc-4751-bd2d-c44f5255f7a9_720x.png?v=1625046591",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/c004ce1e-6eb5-402f-b033-979b8bda5ce6_720x.png?v=1625046591"
+        ],
+        "color": ["black", "blue"]
+    },
+    {
+        "id": 18,
+        "features": [
+            "Perfect metal finish tipped",
+            "Dynamic bass",
+            " Flexible And Hassle Free"
+        ],
+        "name": "BOAT Bassheads 172 KKR Edition",
+        "category": "LIMITED EDITION",
+        "rating": 5,
+        "reviews": 1,
+        "original_price": 1299,
+        "discount": 61,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/3e6cc424-16ae-4153-97db-2b9adc788650_720x.png?v=1625045652"
+        ],
+        "color": ["purple"]
+    },
+    {
+        "id": 19,
+        "features": [
+            "Stylish Hawk-inspired Design",
+            "Premium HD Sound",
+            "3.5 mm Jack"
+        ],
+        "name": "BassHeads 100 MI Edition",
+        "category": "LIMITED EDITION",
+        "rating": 5,
+        "reviews": 8,
+        "original_price": 1290,
+        "discount": 69,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/155807e3-f0b1-4029-a8e0-01d5ea0d3fbe_720x.png?v=1625046139"
+        ],
+        "color": ["blue"]
+    },
+    {
+        "id": 20,
+        "features": [
+            "Optimum Wireless Connectivity",
+            "5 Hours of Playback Time",
+            "Premium HD Sound Quality"
+        ],
+        "name": "Stone 260 CSK Edition",
+        "category": "LIMITED EDITION",
+        "rating": 5,
+        "reviews": 1,
+        "original_price": 3490,
+        "discount": 56,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/stone-260-csk-yellow-1_720x.png?v=1613457242"
+        ],
+        "color": ["yellow"]
+    },
+    {
+        "id": 21,
+        "features": [
+            "boAt Signature Sound",
+            "Connected every moment",
+            "Featherweight"
+        ],
+        "name": "BOAT Airdopes 131 - Wireless Earbuds",
+        "category": "WIRELESS EARBUDS",
+        "rating": 4,
+        "reviews": 577,
+        "original_price": 2990,
+        "discount": 56,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/c2386af9-4349-432f-8ba5-2b6aa06025c8_720x.png?v=1627120825",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/32011675-2ad8-4b99-9787-895caf201d28_720x.png?v=1627120825",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/ivory-white_720x.png?v=1627366932"
+        ],
+        "color": ["black", "pink", "white"]
+    },
+    {
+        "id": 22,
+        "features": [
+            "Play-Time Up To 8 Hours",
+            "HD Premium Sound",
+            "IPX5 Sweat and Water Resistance"
+        ],
+        "name": "BOAT Rockerz 245 V2",
+        "category": "BLUETOOTH EARPHONES",
+        "rating": 4,
+        "reviews": 103,
+        "original_price": 2990,
+        "discount": 66,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245v2_main_1_720x.png?v=1627276362",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245v2_main_4_720x.png?v=1627276376",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245v2_main_3_720x.png?v=1627276372"
+        ],
+        "color": ["black", "green", "red"]
+    },
+    {
+        "id": 23,
+        "features": [
+            "Limitless with ASAP Charge",
+            "True Wireless Bluetooth V5.0",
+            "INSTA WAKE' n' Pair Technology"
+        ],
+        "name": "boAt Airdopes 402 - Wireless Earbuds",
+        "category": "WIRELESS EARBUDS",
+        "rating": 4,
+        "reviews": 394,
+        "original_price": 5990,
+        "discount": 69,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/7925e2ed-89e7-4247-8f27-380ef0178294_720x.png?v=1631104845",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/3b27aa2a-68ce-47db-a975-ffd5543393b6_720x.png?v=1631104857",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/402-main-img_720x.png?v=1631104857"
+        ],
+        "color": ["black", "blue", "white"]
+    },
+    {
+        "id": 24,
+        "features": [
+            "Alexa Voice Assistant",
+            "1.69 INCHES BIG SQUARE DISPLAY",
+            "MULTIPLE WATCH FACES"
+        ],
+        "name": "BOAT‌ Watch Xtend‌",
+        "category": "SMART WATCHES",
+        "rating": 4,
+        "reviews": 29,
+        "original_price": 7990,
+        "discount": 56,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_529ecf13-c993-4fe7-a2d6-9357f1a47db4_720x.png?v=1623931310",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main1_720x.png?v=1623931310",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main3_1_720x.png?v=1623931310"
+        ],
+        "color": ["black", "green", "blue"]
+    },
+    {
+        "id": 25,
+        "features": [
+            "14W boAt Signature Sound",
+            "Up to 9H Nonstop Plays",
+            "IPX7 Water & Splash Shield"
+        ],
+        "name": "Stone 1200‌",
+        "category": "BLUETOOTH SPEAKERS",
+        "rating": 4,
+        "reviews": 32,
+        "original_price": 6990,
+        "discount": 42,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/12d2b457-84fc-4ad2-89cb-5c5c5c0476e2_720x.png?v=1625045905",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/e57bbbe7-5e99-4c43-8cf8-0ddd42caf3d3_720x.png?v=1625045905",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/3e35681e-bcb1-449c-a58a-2d43e8b00bf4_720x.png?v=1625045905"
+        ],
+        "color": ["red", "black", "blue"]
+    },
+    {
+        "id": 26,
+        "features": [
+            "Lightweight Secure Fit Design",
+            "Immersive Audio",
+            "An Absolute Experience"
+        ],
+        "name": "BOAT BassHeads 103‌",
+        "category": "WIRED EARPHONES",
+        "rating": 5,
+        "reviews": 343,
+        "original_price": 1290,
+        "discount": 69,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103b_720x.png?v=1613457250",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103_720x.png?v=1613742737",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103blk_720x.png?v=1613457250"
+        ],
+        "color": ["blue", "red", "black"]
+    },
+    {
+        "id": 27,
+        "features": [
+            "4 hours of playtime per charge",
+            " IPX5 Sweat and Water resistance",
+            "Flawless sound with BT v5.0"
+        ],
+        "name": "BOAT Airdopes 381 - In Ear Wireless Earbuds",
+        "category": "WIRELESS EARBUDS",
+        "rating": 5,
+        "reviews": 68,
+        "original_price": 4990,
+        "discount": 59,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/86b7c390-4a4b-45d7-91e1-65007653b71e_720x.png?v=1631688082",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/a78da6b8-689c-40f3-9c50-bcb4998c5f2a_720x.png?v=1631688082",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/3c53a1e3-bffe-4c6d-b102-cc409c1bfe71_720x.png?v=1631688082"
+        ],
+        "color": ["black", "yellow", "blue"]
+    },
+    {
+        "id": 28,
+        "features": [
+            "Fast Charge Technology",
+            "Immersive Sound",
+            "One Press Voice Assistant"
+        ],
+        "name": "BOAT Rockerz 235 V2",
+        "category": "BLUETOOTH EARPHONES",
+        "rating": 5,
+        "reviews": 842,
+        "original_price": 2990,
+        "discount": 59,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/5f7d33ad-39a9-4426-836e-c300814839b9_720x.png?v=1625046147",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/ed46e58c-9643-43e0-b350-9539d293aa51_720x.png?v=1625046147",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/48d16e65-e295-45ef-a59d-ee85f787001d_720x.png?v=1625046147"
+        ],
+        "color": ["red", "black", "blue"]
+    },
+    {
+        "id": 29,
+        "features": [
+            "Precise health and fitness monitoring",
+            "Full-Touch 2.5D Curved Display",
+            "Keep Track Of Your SpO2 Level"
+        ],
+        "name": "BOAT Storm",
+        "category": "SMART WATCHES",
+        "rating": 5,
+        "reviews": 760,
+        "original_price": 5990,
+        "discount": 49,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/a09a67f0-75bd-42b8-8f0d-58ffad51e03b_720x.png?v=1625046257",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/485ea9aa-b170-4efc-ac40-ab8b0854083c_720x.png?v=1625046257",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/e7910a39-186a-41f6-ac57-fc3e84108104_720x.png?v=1625046257"
+        ],
+        "color": ["black", "white", "pink"]
+    },
+    {
+        "id": 30,
+        "features": [
+            "Up to 15H Nonstop Audio Bliss",
+            "10MM TITANIUM DRIVERS",
+            "Magnetic Earbuds"
+        ],
+        "name": "BOAT 103 Wireless",
+        "category": "BLUETOOTH EARPHONES",
+        "rating": 4,
+        "reviews": 43,
+        "original_price": 1990,
+        "discount": 49,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103-wireless-black_720x.png?v=1613734178",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103-wireless-blue_720x.png?v=1613457313",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103-wireless-pink_720x.png?v=1613457313"
+        ],
+        "color": ["black", "blue", "pink"]
+    },
+    {
+        "id": 31,
+        "features": [
+            "7 hours of Detonation",
+            "HD explosive sound",
+            "Aligned easy access control"
+        ],
+        "name": "Stone Grenade",
+        "category": "BLUETOOTH SPEAKERS",
+        "rating": 5,
+        "reviews": 58,
+        "original_price": 3990,
+        "discount": 64,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/0932e2dd-44fb-43f1-988b-82c086b7ff94_720x.png?v=1625046596"
+        ],
+        "color": ["black"]
+    },
+    {
+        "id": 32,
+        "features": [
+            "15H Nonstop Play",
+            "8mm Drivers: Immersive Audio",
+            "Magnetic Earbuds"
+        ],
+        "name": "BOAT 102 Wireless",
+        "category": "BLUETOOTH EARPHONES",
+        "rating": 5,
+        "reviews": 19,
+        "original_price": 1990,
+        "discount": 44,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/102-wireless-black_720x.png?v=1613734263",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/102-wireless-red_720x.png?v=1613457320",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/102-wireless-green_720x.png?v=1613457320"
+        ],
+        "color": ["black", "red", "green"]
+    },
+    {
+        "id": 33,
+        "features": [
+            "ASAP Fast Charge Technology",
+            "40H Nonstop Audio Bliss",
+            "Qualcomm® aptX™ & aptX™ HD"
+        ],
+        "name": "Rockerz 385 V2",
+        "category": "BLUETOOTH EARPHONES",
+        "rating": 5,
+        "reviews": 48,
+        "original_price": 4990,
+        "discount": 59,
+        "isAvailable": true,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/cc01c8d4-2bd4-4382-848e-f30f37224d26_720x.png?v=1625046381"
+        ],
+        "color": ["black"]
+    },
+    {
+        "id": 34,
+        "features": [
+            "14H Total Playback",
+            "Lightweight Ergonomic Earbuds",
+            "Optimum Bluetooth V5.0."
+        ],
+        "name": "BOAT Airdopes 121 v2 - Wireless Earbuds",
+        "category": "BLUETOOTH EARPHONES",
+        "rating": 4,
+        "reviews": 261,
+        "original_price": 2990,
+        "discount": 56,
+        "isAvailable": false,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-121-v2-black_720x.png?v=1613729012",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-121-v2-blue_720x.png?v=1613457332",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-121-v2-pink_720x.png?v=1613457332"
+        ],
+        "color": ["black", "blue", "pink"]
+    },
+    {
+        "id": 35,
+        "features": [
+            "40H Nonstop Playback",
+            "BOAT Signature Sound ",
+            "Powered By Qualcomm"
+        ],
+        "name": "BOAT Rockerz 255 Pro+",
+        "category": "BLUETOOTH EARPHONES",
+        "rating": 4,
+        "reviews": 144,
+        "original_price": 3990,
+        "discount": 62,
+        "isAvailable": false,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/6af12e30-e6d0-43d3-afd2-500065309a3e_900x.png?v=1625552657",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/35ca6350-d6f3-4bc2-a742-01b2c88d80c4_900x.png?v=1625552657",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/93b827fc-0108-4e8b-9ea9-e66fb1e7a362_720x.png?v=1625157890"
+        ],
+        "color": ["blue", "teal", "black"]
+    },
+    {
+        "id": 36,
+        "features": [
+            "10 Hours of Dynamic Playtime",
+            "30 Hours Nonstop Audio Bliss",
+            "BOAT Signature Sound"
+        ],
+        "name": "Rockerz 330",
+        "category": "BLUETOOTH EARPHONES",
+        "rating": 5,
+        "reviews": 180,
+        "original_price": 2990,
+        "discount": 49,
+        "isAvailable": false,
+
+        "image": [
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main3_a08fff6a-7c3d-4663-9499-3421df127e94_720x.png?v=1622014963",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main1_15634ca0-9f81-4d11-b891-9a1496f709b1_720x.png?v=1622020932",
+            "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_12f5e240-7eec-4b32-8121-29594cae6e84_720x.png?v=1622020932"
+        ],
+        "color": ["black", "red", "yellow"]
+    }
+]

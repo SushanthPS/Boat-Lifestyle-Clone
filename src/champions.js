@@ -12,9 +12,7 @@ export const champions = [
         reviews: 1,
         original_price: 2990,
         discount: 56,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_9f81fab2-b6e1-4522-9f14-5143f5c48fd6_720x.png?v=1617782793",
         ],
@@ -33,9 +31,8 @@ export const champions = [
         reviews: 2,
         original_price: 2990,
         discount: 56,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/a94ee4f6-571a-4b6d-afed-6656650f48f9_720x.png?v=1625046509",
         ],
@@ -54,9 +51,8 @@ export const champions = [
         reviews: 1,
         original_price: 5999,
         discount: 58,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/70e65518-99d2-4778-8deb-a7c3d47bc084_720x.png?v=1625046148",
         ],
@@ -75,9 +71,8 @@ export const champions = [
         reviews: 4,
         original_price: 4990,
         discount: 40,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/b94b60dc-e38c-4b3d-985f-2753a4810ea0_720x.png?v=1623813147",
         ],
@@ -96,9 +91,8 @@ export const champions = [
         reviews: 20,
         original_price: 1290,
         discount: 61,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/a8672be5-2481-4a9f-8f5d-9bda91871efe_720x.png?v=1625046389",
         ],
@@ -113,9 +107,8 @@ export const champions = [
         reviews: 15,
         original_price: 2990,
         discount: 56,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main_330e678b-0d80-4cbc-8fc9-e14a890d46cf_720x.png?v=1617786643",
         ],
@@ -134,9 +127,8 @@ export const champions = [
         reviews: 18,
         original_price: 5999,
         discount: 58,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/acbd8a8a-4657-4897-b37c-217dbd1c51c2_720x.png?v=1623813141",
         ],
@@ -155,9 +147,8 @@ export const champions = [
         reviews: 2,
         original_price: 4990,
         discount: 49,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/0ba417d2-bcb7-49a7-884b-14de7db0fb58_720x.png?v=1625046262",
         ],
@@ -176,9 +167,8 @@ export const champions = [
         reviews: 3,
         original_price: 2990,
         discount: 56,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/2b93db1f-bb85-4e41-9722-b7e53f1c3164_720x.png?v=1625046272",
         ],
@@ -197,9 +187,8 @@ export const champions = [
         reviews: 5,
         original_price: 2990,
         discount: 56,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/7937b869-69ac-4e7e-81c4-c499fcd7bb4a_720x.png?v=1625045162",
         ],
@@ -218,9 +207,8 @@ export const champions = [
         reviews: 1,
         original_price: 5999,
         discount: 58,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/43eb12be-6e8f-4c98-a3a7-f1df3492b919_720x.png?v=1625046593",
         ],
@@ -239,9 +227,8 @@ export const champions = [
         reviews: 1,
         original_price: 2990,
         discount: 56,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/44d7e1e9-e748-4eba-b3a4-6e49aeec8505_720x.png?v=1625045894",
         ],
@@ -260,9 +247,8 @@ export const champions = [
         reviews: 1,
         original_price: 5999,
         discount: 58,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/ca8fe948-afa5-4185-9f1a-7a682c643da0_720x.png?v=1625045893",
         ],
@@ -281,9 +267,8 @@ export const champions = [
         reviews: 1,
         original_price: 3990,
         discount: 50,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/a4811849-6afc-47c8-95a6-022d1e37eb7d_720x.png?v=1625045653",
         ],
@@ -302,9 +287,8 @@ export const champions = [
         reviews: 1,
         original_price: 5999,
         discount: 58,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/d740bfe0-326b-42d5-8b42-a24e738e2032_720x.png?v=1625045294",
         ],
@@ -323,9 +307,8 @@ export const champions = [
         reviews: 3,
         original_price: 2990,
         discount: 56,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/0642669c-5c9c-401b-8964-e79f2dad8520_720x.png?v=1625046137",
         ],
@@ -344,9 +327,8 @@ export const champions = [
         reviews: 6,
         original_price: 3990,
         discount: 50,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/4dddedb8-f8bc-4751-bd2d-c44f5255f7a9_720x.png?v=1625046591",
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/c004ce1e-6eb5-402f-b033-979b8bda5ce6_720x.png?v=1625046591",
@@ -366,9 +348,8 @@ export const champions = [
         reviews: 1,
         original_price: 1299,
         discount: 61,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/3e6cc424-16ae-4153-97db-2b9adc788650_720x.png?v=1625045652",
         ],
@@ -387,9 +368,8 @@ export const champions = [
         reviews: 8,
         original_price: 1290,
         discount: 69,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/155807e3-f0b1-4029-a8e0-01d5ea0d3fbe_720x.png?v=1625046139",
         ],
@@ -408,9 +388,8 @@ export const champions = [
         reviews: 1,
         original_price: 3490,
         discount: 56,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/stone-260-csk-yellow-1_720x.png?v=1613457242",
         ],
@@ -429,9 +408,8 @@ export const champions = [
         reviews: 577,
         original_price: 2990,
         discount: 56,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/c2386af9-4349-432f-8ba5-2b6aa06025c8_720x.png?v=1627120825",
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/32011675-2ad8-4b99-9787-895caf201d28_720x.png?v=1627120825",
@@ -452,9 +430,8 @@ export const champions = [
         reviews: 103,
         original_price: 2990,
         discount: 66,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245v2_main_1_720x.png?v=1627276362",
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/245v2_main_4_720x.png?v=1627276376",
@@ -475,9 +452,8 @@ export const champions = [
         reviews: 394,
         original_price: 5990,
         discount: 69,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/7925e2ed-89e7-4247-8f27-380ef0178294_720x.png?v=1631104845",
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/3b27aa2a-68ce-47db-a975-ffd5543393b6_720x.png?v=1631104857",
@@ -498,9 +474,8 @@ export const champions = [
         reviews: 29,
         original_price: 7990,
         discount: 56,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main2_529ecf13-c993-4fe7-a2d6-9357f1a47db4_720x.png?v=1623931310",
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main1_720x.png?v=1623931310",
@@ -521,9 +496,8 @@ export const champions = [
         reviews: 32,
         original_price: 6990,
         discount: 42,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/12d2b457-84fc-4ad2-89cb-5c5c5c0476e2_720x.png?v=1625045905",
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/e57bbbe7-5e99-4c43-8cf8-0ddd42caf3d3_720x.png?v=1625045905",
@@ -544,9 +518,8 @@ export const champions = [
         reviews: 343,
         original_price: 1290,
         discount: 69,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103b_720x.png?v=1613457250",
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103_720x.png?v=1613742737",
@@ -567,9 +540,8 @@ export const champions = [
         reviews: 68,
         original_price: 4990,
         discount: 59,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/86b7c390-4a4b-45d7-91e1-65007653b71e_720x.png?v=1631688082",
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/a78da6b8-689c-40f3-9c50-bcb4998c5f2a_720x.png?v=1631688082",
@@ -590,9 +562,8 @@ export const champions = [
         reviews: 842,
         original_price: 2990,
         discount: 59,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/5f7d33ad-39a9-4426-836e-c300814839b9_720x.png?v=1625046147",
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/ed46e58c-9643-43e0-b350-9539d293aa51_720x.png?v=1625046147",
@@ -613,9 +584,8 @@ export const champions = [
         reviews: 760,
         original_price: 5990,
         discount: 49,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/a09a67f0-75bd-42b8-8f0d-58ffad51e03b_720x.png?v=1625046257",
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/485ea9aa-b170-4efc-ac40-ab8b0854083c_720x.png?v=1625046257",
@@ -636,9 +606,8 @@ export const champions = [
         reviews: 43,
         original_price: 1990,
         discount: 49,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103-wireless-black_720x.png?v=1613734178",
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/103-wireless-blue_720x.png?v=1613457313",
@@ -659,9 +628,8 @@ export const champions = [
         reviews: 58,
         original_price: 3990,
         discount: 64,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/0932e2dd-44fb-43f1-988b-82c086b7ff94_720x.png?v=1625046596",
         ],
@@ -680,9 +648,8 @@ export const champions = [
         reviews: 19,
         original_price: 1990,
         discount: 44,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/102-wireless-black_720x.png?v=1613734263",
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/102-wireless-red_720x.png?v=1613457320",
@@ -703,9 +670,8 @@ export const champions = [
         reviews: 48,
         original_price: 4990,
         discount: 59,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: true,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/cc01c8d4-2bd4-4382-848e-f30f37224d26_720x.png?v=1625046381",
         ],
@@ -724,9 +690,8 @@ export const champions = [
         reviews: 261,
         original_price: 2990,
         discount: 56,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: false,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-121-v2-black_720x.png?v=1613729012",
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/airdopes-121-v2-blue_720x.png?v=1613457332",
@@ -747,9 +712,8 @@ export const champions = [
         reviews: 144,
         original_price: 3990,
         discount: 62,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: false,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/6af12e30-e6d0-43d3-afd2-500065309a3e_900x.png?v=1625552657",
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/35ca6350-d6f3-4bc2-a742-01b2c88d80c4_900x.png?v=1625552657",
@@ -770,9 +734,8 @@ export const champions = [
         reviews: 180,
         original_price: 2990,
         discount: 49,
-        isAvaiable: true,
-        isNew: true,
-        isTrending: true,
+        isAvailable: false,
+
         image: [
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main3_a08fff6a-7c3d-4663-9499-3421df127e94_720x.png?v=1622014963",
             "https://cdn.shopify.com/s/files/1/0057/8938/4802/products/main1_15634ca0-9f81-4d11-b891-9a1496f709b1_720x.png?v=1622020932",
