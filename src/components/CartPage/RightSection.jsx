@@ -108,7 +108,7 @@ const ProductDisplay = styled.div`
         line-height: 20px;
         color: #FAFAFA;
         text-align: center;
-        padding-top: 5px;
+        padding-top: 2px;
     }
 `;
 
