@@ -1,5 +1,5 @@
 import { Routes } from "./routes/Routes";
-import { Payment } from "./components/Payment/PaymentFinal";
+// import { Payment } from "./components/Payment/PaymentFinal";
 
 function App() {
     return (
