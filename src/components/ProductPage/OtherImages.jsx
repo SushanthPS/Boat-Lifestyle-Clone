@@ -12,15 +12,14 @@ const LeftSection = styled.div`
 
     & div {
         position: absolute;
-        width: 30.92%;
-        height: 410px;
+        width: 400px;
         left: 9.80%;
         top: 24px;
     }
 
     & h2 {
         position: absolute;
-        width: 37.85%;
+        width: 80%;
         height: 49px;
         left: 7.54%;
         top: 448px;
@@ -33,7 +32,7 @@ const LeftSection = styled.div`
 
     & p {
         position: absolute;
-        width: 41.47%;
+        width: 80%;
         height: 48px;
         left: 7.54%;
         top: 516px;
@@ -80,7 +79,7 @@ const RightSection = styled.div`
 
     & img {  
         position: absolute;
-        width: 79.33%;
+        width: 480px;
         height: 493px;
         left: 9.80%;
         top: 248px;
