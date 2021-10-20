@@ -124,7 +124,7 @@ const Container = styled.div`
     & .discountPrice {
         width: 100px;
         height: 32px;
-        margin-left: 10px;
+        margin-left: 30px;
         margin-top: 10px;
         font-size: 26px;
         line-height: 32px;
@@ -320,6 +320,7 @@ const Container = styled.div`
 `;
 
 export default function TopProductDisplay() {
+    const [btn, setBtn] = useState("ADD TO CART");
     const { productName } = useParams();
 
     const temp = {
@@ -353,7 +354,7 @@ export default function TopProductDisplay() {
         const ele = temp.filter((el) => el.name === productName);
         setE(ele[0]);
     };
-
+    console.log(e);
     useEffect(() => {
         getData();
     }, []);
@@ -373,6 +374,18 @@ export default function TopProductDisplay() {
     const changeImageCircle = (k) => {
         setIndex(k);
     };
+
+    const addToCart = async () => {
+        setBtn("ADDED TO CART");
+        const id = localStorage.getItem("id");
+        const res = await axios.get(`http://localhost:3002/users/${id}`);
+        const user = res.data;
+        user.cart.push(e);
+        await axios.patch(`http://localhost:3002/users`, {
+            _id: id,
+            cart: user.cart
+        })
+    }
     return (
         <Container>
             <div className="topImage">
@@ -432,7 +445,7 @@ export default function TopProductDisplay() {
                     </p>
                     <img className="zest" src={zest} alt="zest" />
                 </div>
-                <button className="addToCart">ADD TO CART</button>
+                <button className="addToCart" onClick={addToCart}>{btn}</button>
                 <button className="buyItNow">BUY IT NOW</button>
             </div>
             <div className="warranty"></div>

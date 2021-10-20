@@ -77,7 +77,7 @@ const Container = styled.div`
         width: 86%;
     }
 
-    & form .check {
+    /* & form .check {
         display: flex;
         width: 86%;
         margin-top: 44px;
@@ -87,7 +87,7 @@ const Container = styled.div`
         font-size: 16px;
         line-height: 20px;
         margin-left: 10px;
-    }
+    } */
 
     & form .name {
         margin-top: 28px;
@@ -135,22 +135,70 @@ const Container = styled.div`
          margin-top: 22px;
      }
 
-    & input[type=checkbox] {
-        -webkit-appearance: none;
-        width: 26px;
-        height: 26px;
-        background: #ffffff;
-        border: 1px solid black;
-    }
+& .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  padding-top: 5px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top: 44px;
+}
 
-     & input[type=checkbox]:checked {
-        background-color: black;
-        border: solid white;
-        border-width: 0 5px 5px 0;
-        -webkit-transform: rotate(45deg);
-        -ms-transform: rotate(45deg);
-        transform: rotate(45deg);
-    }
+& .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+& .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 26px;
+  width: 26px;
+  background-color: #fff;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+& .container:hover input ~ .checkmark {
+  background-color: #fff;
+}
+
+& .container input:checked ~ .checkmark {
+  background-color: black;
+  border-radius: 6px;
+}
+
+& .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+& .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+& .container .checkmark:after {
+  left: 8px;
+  top: 4px;
+  width: 8px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
 
     & .dropdown {
         display: flex;
@@ -212,16 +260,34 @@ const Container = styled.div`
         font-size: 12px;
         margin-right: 15px;
     }
+
+    & .red {
+        color : #FF0000;
+    }
 `;
 
 export default function LeftSection() {
+    const goToShipping = (e) => {
+        e.preventDefault();   
+    var fields = ["email", "firstName", "secondName", "address", "houseNo", "city", "pincode", "phone"];
+
+    var i, l = fields.length;
+    var fieldname;
+    for (i = 0; i < l; i++) {
+        fieldname = fields[i];
+        if (document.forms[fieldname].value === "") {
+        alert("Please filed all the fields");
+        return false;
+        }
+    }
+    }
     return (
         <Container>
             <img className="logo" src={logo} alt="logo"/>
             <div className="covid">Note: Due to COVID related lockdowns, Please  expect a delay in the delivery of your order.</div>
             <div>
                 <p>{'Cart >'}</p>
-                <p>{'Information >'}</p>
+                <p className="red">{'Information >'}</p>
                 <p>{'Shipping >'}</p>
                 <p>{'Payment'}</p>
             </div>
@@ -229,12 +295,12 @@ export default function LeftSection() {
                 <p>Contact Information</p>
                 <p>Already have an account? Log in</p>
             </div>
-            <form>
+            <form onSubmit={goToShipping}>
                 <input type="text" name="email" placeholder="Email" />
-                <div className="check">
-                    <input type="checkbox" name="updated"/>
-                    <p>Keep me updated on my order status over email and whatsapp</p>
-                </div>
+                <label class="container">Keep me updated on my order status over email and whatsapp
+                    <input type="checkbox"/>
+                    <span class="checkmark"></span>
+                </label>
                 <p className="ship">Shipping Adddress</p>
                 <div className="name">
                     <input type="text" name="firstName" placeholder="First Name" />
@@ -291,10 +357,10 @@ export default function LeftSection() {
                     <input type="text" name="pincode" placeholder="Pincode" />
                 </div>
                 <input type="text" name="phone" placeholder="Phone Number" />
-                 <div className="check">
-                    <input type="checkbox" name="saveinfo"/>
-                    <p>Save this information for next time</p>
-                </div>
+                <label class="container">Save this information for next time
+                    <input type="checkbox"/>
+                    <span class="checkmark"></span>
+                </label>
                 <div className="btn">
                     <div className="vector">
                         <img src={vector} alt="left"/>
