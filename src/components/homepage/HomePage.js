@@ -3,6 +3,7 @@ import { Video } from "./Video";
 import { ImageSlider2 } from "./ImageSlider2";
 import { Blog } from "./blog/Blog";
 import { useLayoutEffect } from "react";
+import { ComplexSlider } from "./ComplexSlider";
 
 export const HomePage = () => {
     useLayoutEffect(() => {
@@ -11,7 +12,7 @@ export const HomePage = () => {
     return (
         <>
             <ImageSlider />
-            {/* ComplexSlider */}
+            <ComplexSlider />
             <Video />
             <ImageSlider2 />
             <Blog />

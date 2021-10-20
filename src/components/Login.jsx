@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -104,7 +104,7 @@ const Form = styled.form`
 
     .forgot-password:hover {
         cursor: pointer;
-        color: #01a2e1;
+        color: red;
         text-decoration: underline;
         background-color: transparent;
     }
@@ -152,10 +152,114 @@ const Form = styled.form`
     }
 `;
 
+const Forgot = styled.div`
+    background-color: var(--white);
+    padding-top: 70px;
+    padding-bottom: 150px;
+
+    .container {
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .small-form {
+        margin-left: auto;
+        margin-right: auto;
+        width: 420px;
+        max-width: 100%;
+    }
+
+    .title {
+        margin: 10px 0 40px;
+    }
+
+    .title > h2 {
+        text-align: center;
+        margin: 0 0 20px;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 1.2em;
+    }
+
+    .title > p {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .recover-email {
+        margin-bottom: 20px;
+
+        label {
+            display: block;
+            font-size: 16px;
+            line-height: 1.4em;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            font-size: 16px;
+            line-height: 16px;
+            background: #fff;
+            color: #000;
+            border: 1px solid #d8d8d8;
+            padding: 11px 15px;
+            vertical-align: middle;
+            max-width: 100%;
+        }
+    }
+
+    .action-bottom {
+        margin-top: 27px;
+
+        p {
+            text-align: center !important;
+            margin-bottom: 1em;
+        }
+        button {
+            cursor: pointer;
+            border-radius: 5px;
+            background: red;
+            border: 1px solid red;
+            color: #fff;
+            font-size: 16px;
+            font-family: inherit;
+            font-weight: 500;
+            font-style: inherit;
+            line-height: 1em;
+            height: auto;
+            margin: 0;
+            text-decoration: none !important;
+            padding: 11px 25px;
+            vertical-align: middle;
+            text-align: center;
+            display: inline-block;
+            transition: background-color 0.1s, color 0.1s, border-color 0.1s,
+                opacity 0.1s;
+        }
+
+        span {
+            display: block;
+            margin: 10px 0;
+            text-align: center;
+        }
+        span:hover {
+            color: red;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+`;
+
 export function Login() {
     const [data, setData] = useState([]);
     const [email, setEmail] = useState("");
     const [pass, setPass] = useState("");
+    const [flag, setFlag] = useState(false);
+    const [forgotPass, setForgotPass] = useState("first");
 
     const getData = async () => {
         const res = await axios.get("http://localhost:3002/users");
@@ -172,15 +276,18 @@ export function Login() {
             }
         }
         if (cred) {
-            alert("Working");
-        } else alert("Incorrect email or password");
+            setFlag(true);
+        } else {
+            setFlag(false);
+            alert("Incorrect email or password");
+        }
     };
 
     useEffect(() => {
         getData();
     }, []);
 
-    return (
+    return forgotPass === "first" ? (
         <Container>
             <div className="cont">
                 <div className="cont2">
@@ -214,7 +321,10 @@ export function Login() {
                                     type="password"
                                     id="customer_password"
                                 />
-                                <div className="forgot-password">
+                                <div
+                                    onClick={() => setForgotPass("second")}
+                                    className="forgot-password"
+                                >
                                     Forgot your password?
                                 </div>
                             </div>
@@ -232,8 +342,60 @@ export function Login() {
                             </Link>
                         </div>
                     </Form>
+                    {flag ? <Redirect to="/cart" /> : ""}
                 </div>
             </div>
         </Container>
+    ) : forgotPass === "second" ? (
+        <Forgot>
+            <div className="container">
+                <div className="small-form">
+                    <div className="title">
+                        <h2>Reset your password</h2>
+                        <p>We will send you an email to reset your password.</p>
+                    </div>
+                    <div className="recover-email">
+                        <label htmlFor="recover-email">Email</label>
+                        <input type="email" id="recover-email" />
+                    </div>
+                    <div className="action-bottom">
+                        <p>
+                            <button onClick={() => setForgotPass("third")}>
+                                Submit
+                            </button>
+                        </p>
+                        <span
+                            onClick={() => {
+                                setForgotPass("first");
+                            }}
+                        >
+                            Cancel
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </Forgot>
+    ) : (
+        <Forgot>
+            <div className="container">
+                <div className="small-form">
+                    <div className="title">
+                        <h2>Reset your password</h2>
+                        <p>
+                            We've sent you an email with a link to update your
+                            password.
+                        </p>
+                    </div>
+
+                    <div className="action-bottom">
+                        <p>
+                            <button onClick={() => setForgotPass("first")}>
+                                Sign in
+                            </button>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </Forgot>
     );
 }
