@@ -315,7 +315,7 @@ export const Payment = () => {
                         style={{
                             marginTop: "35px",
                             width: 1200,
-                            marginTop: 35,
+                            // marginTop: 35,
                         }}
                     />
                     <div className="secure">
