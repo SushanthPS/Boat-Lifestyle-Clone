@@ -179,9 +179,10 @@ const Code = styled.div`
     background: #000000;
     border-radius: 8px;
     padding: 10px;
+    padding-left: 15px;
 
     & p {
-        color: white;
+        color: #fafafa;
         font-size: 20px;
         line-height: 24px;
     }

@@ -8,8 +8,10 @@ import { Footer } from "../components/Footer";
 import ProductPage from "../components/ProductPage/ProductPage";
 import { Collections } from "../components/Collections";
 import { Navbar } from "../components/navbar/Navbar";
-import CartPage from "../components/CartPage/CartPage";
+// import CartPage from "../components/CartPage/CartPage";
 import { Success } from "../components/Success";
+import Cart from '../components/Cart/Cart';
+// import EnterInformation from '../components/EnterInformation/EnterInformation';
 
 export function Routes() {
     return (
@@ -46,7 +48,7 @@ export function Routes() {
 
             <Route path="/cart">
                 <Navbar />
-                <CartPage />
+                <Cart />
             </Route>
 
             <Route exact path="/successful">

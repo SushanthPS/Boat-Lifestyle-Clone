@@ -272,6 +272,7 @@ export function Login() {
         for (let i = 0; i < data.length; i++) {
             if (data[i].email === email && data[i].password === pass) {
                 cred = true;
+                localStorage.setItem("id", data[i]._id);
                 break;
             }
         }
