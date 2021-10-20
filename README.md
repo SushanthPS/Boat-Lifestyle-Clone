@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Boat-Lifestyle (Clone)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Project: make a clone of https://www.boat-lifestyle.com/ site
 
-## Available Scripts
+_This is an E-Commerce website which speciaizes in selling products of Boat-Lifestyle._
 
-In the project directory, you can run:
+&nbsp;&nbsp;&nbsp;&#160;In this project we have tried to make the clone boat-lifestyle.com with ReactJs. We are able to clone some of the features of the website.
 
-### `npm start`
+## Technology Stack Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- HTML
+- CSS
+- JavaScript
+- MongoDB
+- ReactJs
+- Express
+- NodeJs
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+For storing user data we also used MongoDB Atlas.
 
-### `npm test`
+## Libraries Used 🌟
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+All the image and icon links have been taken from the main website ( https://strawberrynet.com/en-in )
 
-### `npm run build`
+## Snapshots 📷
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Landing Page (Home Page):
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Home Page](https://user-images.githubusercontent.com/35700009/138110802-fca0ecb0-968b-40ad-9b08-581a423262f8.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Champions Page:
 
-### `npm run eject`
+![Category Page](https://user-images.githubusercontent.com/35700009/138111008-c3e05fd9-3210-40c3-a3b7-373168ab63be.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Product Details Page:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Product Page](https://user-images.githubusercontent.com/35700009/138111102-5514f298-cd7b-43e3-a332-320a037d8a76.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## How to run the Project:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. Run the command `npm start` in terminal to start the app.
+2. Go to the `https://github.com/SushanthPS/Boat-Lifestyle-Api` bakend for this project is their and run `npm run server`.
+3. First Login than you can products to the Cart.
 
-## Learn More
+### End Notes 📑
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+In this project we were tried to achieve a near to perfect clone of the original website as much as possible. This entire journey of this construct week has given us experiences and we have learned lots of things by applying to the real website and it gave us a lot of confidence.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Limitations:
 
-### Code Splitting
+All pages are not responsive yet , those pages are might not be properly visible on small screen devices.
+(Recomended Resolution: 1440 x 768 )
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Team Members and Contributors 😇 :
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- 👤 Susanth PS
+  Github: https://github.com/SushanthPS
+- 👤 Santosh Mane
+  Github: https://github.com/santoshmcode
+- 👤 Mohit Maurya
+  Github: https://github.com/MohitMaurya
