@@ -4,6 +4,8 @@
 1) ReactJS for the frontend
 2) NodeJS, Express And MongoDB for the backend
 
+#### Backend for this project:  `https://github.com/SushanthPS/Boat-Lifestyle-Api`
+
 
 
 <br>
