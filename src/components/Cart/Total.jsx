@@ -37,7 +37,7 @@ const Container = styled.div`
 export default function Total({ total }) {
     const history = useHistory();
     const checkOut = () => {
-        history.push("/")
+        history.push("/payment")
     }
     const contShopping = () => {
         history.push("/")

@@ -343,7 +343,7 @@ export function Login() {
                             </Link>
                         </div>
                     </Form>
-                    {flag ? <Redirect to="/cart" /> : ""}
+                    {flag ? <Redirect to="/" /> : ""}
                 </div>
             </div>
         </Container>

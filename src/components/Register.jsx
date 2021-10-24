@@ -223,7 +223,7 @@ export function Register() {
                         </div>
                     </Form>
                     {flag ? (
-                        <Redirect to="/" />
+                        <Redirect to="/account/login" />
                     ) : (
                         <Redirect to="/account/register" />
                     )}

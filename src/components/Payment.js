@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import leftArrow from "../../assets/left-arrow.svg";
-import paytmLogo from "../../assets/paytm-logo.svg";
-import qrCode from "../../assets/qr-code.svg";
-import { useState } from "react";
+import leftArrow from "../assets/left-arrow.svg";
+import paytmLogo from "../assets/paytm-logo.svg";
+import qrCode from "../assets/qr-code.svg";
+import { useEffect, useState } from "react";
 
 const PaymentContainer = styled.div`
     width: 100%;
@@ -225,6 +225,11 @@ const PaymentContainer = styled.div`
 
 export const Payment = () => {
     const [flag, setFlag] = useState(true);
+    const [total, setTotal] = useState();
+
+    useEffect(() => {
+        setTotal(localStorage.getItem("total"));
+    },[])
     const handleFlag = () => {
         setFlag(false);
     };
@@ -242,7 +247,7 @@ export const Payment = () => {
                     <p className="transionID">Transection ID:1234567890</p>
                     <p className="amount-paid-title">Amount to be paid</p>
                     <p className="amount">
-                        ₹ <span>1,499.00</span>
+                        ₹ <span>{total}</span>
                     </p>
                 </section>
                 <section className="payment-section-2">
@@ -302,7 +307,7 @@ export const Payment = () => {
                             </div>
                         </>
                     )}
-                    <div className="payment-methods">
+                    {/* <div className="payment-methods">
                         <div className="circle"></div>Debit Card
                     </div>
                     <div className="payment-methods">
@@ -310,15 +315,11 @@ export const Payment = () => {
                     </div>
                     <div className="payment-methods">
                         <div className="circle"></div>Net Banking
-                    </div>
+                    </div> */}
                     <hr
                         style={{
                             marginTop: "35px",
                             width: 1200,
-<<<<<<< HEAD:src/components/Payment.js
-                            // marginTop: 35,
-=======
->>>>>>> 488c985c361c3eecac80c7f2b113638bc1c13edd:src/components/Payment/PaymentFinal.js
                         }}
                     />
                     <div className="secure">

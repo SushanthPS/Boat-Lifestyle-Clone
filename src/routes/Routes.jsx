@@ -11,6 +11,7 @@ import { Navbar } from "../components/navbar/Navbar";
 // import CartPage from "../components/CartPage/CartPage";
 import { Success } from "../components/Success";
 import Cart from '../components/Cart/Cart';
+import { Payment } from "../components/Payment";
 // import EnterInformation from '../components/EnterInformation/EnterInformation';
 
 export function Routes() {
@@ -49,6 +50,10 @@ export function Routes() {
             <Route path="/cart">
                 <Navbar />
                 <Cart />
+            </Route>
+
+            <Route path="/payment">
+                <Payment/>
             </Route>
 
             <Route exact path="/successful">

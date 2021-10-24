@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import loading from "../assets/loading-icon.svg";
 import { keyframes } from "styled-components";
+import { useHistory } from 'react-router-dom';
+import axios from "axios";
 
 const rotation = keyframes`
 0% {
@@ -98,12 +100,36 @@ const Final = styled.div`
 
 export function Success() {
     const [flag, setFlag] = useState(false);
+    const [total, setTotal] = useState();
+    const history = useHistory();
+    useEffect(() => {
+        setTotal(localStorage.getItem("total"));
+    },[])
 
     useEffect(() => {
         setTimeout(() => {
             setFlag(true);
         }, 3000);
     }, []);
+
+    useEffect(() => {
+        const id = setTimeout(() => {
+            removeCart();
+            history.push("/");
+        }, 10000)
+        return () => {
+            clearTimeout(id);
+        }
+    }, [history])
+    
+    const removeCart = async () => {
+        const id = localStorage.getItem("id");
+        await axios.patch(`http://localhost:3002/users`, {
+            _id: id,
+            cart: []
+        })
+        localStorage.removeItem("total");
+    }
 
     return !flag ? (
         <Container>
@@ -120,7 +146,7 @@ export function Success() {
                 <img src="https://i.stack.imgur.com/ZRTb6.gif" alt="" />
                 <h1>Payment Success!</h1>
                 <p>
-                    You Paid Rs.1,999.00 <br /> to Boat life Style
+                    You Paid Rs.{total}.00 <br /> to Boat life Style
                 </p>
             </div>
         </Final>

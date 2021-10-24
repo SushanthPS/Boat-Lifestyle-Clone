@@ -15,6 +15,7 @@ const Container = styled.div`
 
 export default function Cart() {
     const [total, setTotal] = useState(0);
+    localStorage.setItem("total", total);
     return (
         <Container>
             <Heading />
