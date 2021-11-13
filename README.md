@@ -27,7 +27,7 @@
 
 1) Clone the project and install the required packages with `npm install`
 2) Clone the backend of this project from `https://github.com/SushanthPS/Boat-Lifestyle-Api` <br/> and run the command `npm run server`
-4) Run the command `npm start` in terminal to start the app.
+3) Run the command `npm start` in terminal to start the app.
 
 <br>
 
